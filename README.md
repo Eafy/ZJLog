@@ -10,6 +10,7 @@
 [ZJLogSDK setLogOut];
 
 
+
 文件功能内容如下：
 ZJLogSDK(h、mm)：主体部分，包括代理设置、日志总开关、日志上报开关，在此用mm后缀可兼容m、mm(C++类)两种OC文件使用CLog，若使用m后缀则在mm文件中无法使用；
 
