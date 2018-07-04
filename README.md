@@ -2,8 +2,10 @@
 
 设置代理：
 [ZJLogSDK setDelegate:self];
+
 关闭日志输出：
 [ZJLogSDK setLogOFF];
+
 关闭日志上报：
 [ZJLogSDK setLogOut];
 
