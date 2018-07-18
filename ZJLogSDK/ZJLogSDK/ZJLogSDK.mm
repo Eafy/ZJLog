@@ -9,6 +9,11 @@
 #import "ZJLogSDK.h"
 #import "ZJLogSDKExt.h"
 
+void CPrintfCallback(const char *log)
+{
+    [[ZJLogSDK sharedTool] sendLogStr:[NSString stringWithFormat:@"%s", log]];
+}
+
 @interface ZJLogSDK ()
 
 @property (nonatomic,assign) BOOL logEnable;        //日志开关

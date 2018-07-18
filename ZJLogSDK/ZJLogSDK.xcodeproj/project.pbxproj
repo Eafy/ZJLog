@@ -10,7 +10,7 @@
 		0C8C7D6520ECB948006C0007 /* ZJLogBridgeC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8C7D6120ECB948006C0007 /* ZJLogBridgeC.m */; };
 		0C8C7D6620ECB948006C0007 /* ZJLogSDK.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0C8C7D6320ECB948006C0007 /* ZJLogSDK.mm */; };
 		0C8C7D6D20ECBB6E006C0007 /* ZJLogSDK.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0C8C7D5E20ECB948006C0007 /* ZJLogSDK.h */; };
-		0C8C7D7F20ECBEC7006C0007 /* ZJLogTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8C7D7E20ECBEC7006C0007 /* ZJLogTest.m */; };
+		0C8C7D7F20ECBEC7006C0007 /* ZJLogTest.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0C8C7D7E20ECBEC7006C0007 /* ZJLogTest.mm */; };
 		0C8C7D8020ECBEE8006C0007 /* ZJLogTest.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0C8C7D7D20ECBEC7006C0007 /* ZJLogTest.h */; };
 /* End PBXBuildFile section */
 
@@ -38,7 +38,7 @@
 		0C8C7D6320ECB948006C0007 /* ZJLogSDK.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ZJLogSDK.mm; sourceTree = "<group>"; };
 		0C8C7D6420ECB948006C0007 /* ZJLogBridgeC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJLogBridgeC.h; sourceTree = "<group>"; };
 		0C8C7D7D20ECBEC7006C0007 /* ZJLogTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZJLogTest.h; sourceTree = "<group>"; };
-		0C8C7D7E20ECBEC7006C0007 /* ZJLogTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJLogTest.m; sourceTree = "<group>"; };
+		0C8C7D7E20ECBEC7006C0007 /* ZJLogTest.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ZJLogTest.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +79,7 @@
 				0C8C7D5E20ECB948006C0007 /* ZJLogSDK.h */,
 				0C8C7D6320ECB948006C0007 /* ZJLogSDK.mm */,
 				0C8C7D7D20ECBEC7006C0007 /* ZJLogTest.h */,
-				0C8C7D7E20ECBEC7006C0007 /* ZJLogTest.m */,
+				0C8C7D7E20ECBEC7006C0007 /* ZJLogTest.mm */,
 			);
 			path = ZJLogSDK;
 			sourceTree = "<group>";
@@ -142,7 +142,7 @@
 			files = (
 				0C8C7D6620ECB948006C0007 /* ZJLogSDK.mm in Sources */,
 				0C8C7D6520ECB948006C0007 /* ZJLogBridgeC.m in Sources */,
-				0C8C7D7F20ECBEC7006C0007 /* ZJLogTest.m in Sources */,
+				0C8C7D7F20ECBEC7006C0007 /* ZJLogTest.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

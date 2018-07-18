@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C5DDEA420FECA11007DCF71 /* libZJLogSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C5DDEA320FECA11007DCF71 /* libZJLogSDK.a */; };
 		0C8C7D9420ECC3E0006C0007 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8C7D9320ECC3E0006C0007 /* AppDelegate.m */; };
 		0C8C7D9720ECC3E0006C0007 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8C7D9620ECC3E0006C0007 /* ViewController.m */; };
 		0C8C7D9A20ECC3E0006C0007 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C8C7D9820ECC3E0006C0007 /* Main.storyboard */; };
@@ -15,7 +16,6 @@
 		0C8C7DA220ECC3E0006C0007 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8C7DA120ECC3E0006C0007 /* main.m */; };
 		0C8C7DAC20ECC3E0006C0007 /* ZJLogSDKDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8C7DAB20ECC3E0006C0007 /* ZJLogSDKDemoTests.m */; };
 		0C8C7DB720ECC3E0006C0007 /* ZJLogSDKDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8C7DB620ECC3E0006C0007 /* ZJLogSDKDemoUITests.m */; };
-		0C8C7DC820ECC424006C0007 /* libZJLogSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C8C7DC520ECC424006C0007 /* libZJLogSDK.a */; };
 		0C8C7DCB20ECC44F006C0007 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C8C7DCA20ECC44F006C0007 /* libstdc++.tbd */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0C5DDEA320FECA11007DCF71 /* libZJLogSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libZJLogSDK.a; sourceTree = "<group>"; };
 		0C8C7D8F20ECC3E0006C0007 /* ZJLogSDKDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZJLogSDKDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C8C7D9220ECC3E0006C0007 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0C8C7D9320ECC3E0006C0007 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -60,7 +61,6 @@
 		0C8C7DB220ECC3E0006C0007 /* ZJLogSDKDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZJLogSDKDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C8C7DB620ECC3E0006C0007 /* ZJLogSDKDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJLogSDKDemoUITests.m; sourceTree = "<group>"; };
 		0C8C7DB820ECC3E0006C0007 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0C8C7DC520ECC424006C0007 /* libZJLogSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libZJLogSDK.a; sourceTree = "<group>"; };
 		0C8C7DC620ECC424006C0007 /* ZJLogTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJLogTest.h; sourceTree = "<group>"; };
 		0C8C7DC720ECC424006C0007 /* ZJLogSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJLogSDK.h; sourceTree = "<group>"; };
 		0C8C7DCA20ECC44F006C0007 /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
@@ -73,7 +73,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C8C7DCB20ECC44F006C0007 /* libstdc++.tbd in Frameworks */,
-				0C8C7DC820ECC424006C0007 /* libZJLogSDK.a in Frameworks */,
+				0C5DDEA420FECA11007DCF71 /* libZJLogSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,7 +154,7 @@
 		0C8C7DC420ECC424006C0007 /* ZJLogSDK */ = {
 			isa = PBXGroup;
 			children = (
-				0C8C7DC520ECC424006C0007 /* libZJLogSDK.a */,
+				0C5DDEA320FECA11007DCF71 /* libZJLogSDK.a */,
 				0C8C7DC620ECC424006C0007 /* ZJLogTest.h */,
 				0C8C7DC720ECC424006C0007 /* ZJLogSDK.h */,
 			);

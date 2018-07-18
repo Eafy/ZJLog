@@ -14,7 +14,7 @@
 #import "Singleton.h"
 
 #define CLog(...) [[ZJLogSDK sharedTool] sendLogStr:[NSString stringWithFormat:__VA_ARGS__]]
-
+extern void CPrintfCallback(const char *log);
 
 @interface ZJLogSDK ()
 singleton_h(Tool);
