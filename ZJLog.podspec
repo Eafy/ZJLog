@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 
   s.name         = "ZJLog"
   s.version      = "1.0.0"
-  s.summary      = "A short description of ZJLog."
+  s.summary      = "Log redirection output tool for iOS."
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
-Log redirection output tool for iOS
+Log redirection output tool for iOS, you can set the Log level, redirect output to the proxy interface, save logs to the sandbox, and more.
                    DESC
 
   s.homepage     = "https://github.com/Eafy/ZJLog.git"
