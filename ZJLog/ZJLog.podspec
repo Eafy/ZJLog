@@ -39,8 +39,8 @@ Log redirection output tool for iOS, you can set the Log level, redirect output 
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  s.license      = "MIT"
-  # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+  #s.license      = 'MIT'
+  s.license      = { :type => "MIT", :file => "LICENSE" }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -65,7 +65,7 @@ Log redirection output tool for iOS, you can set the Log level, redirect output 
   #
 
   # s.platform     = :ios
-  # s.platform     = :ios, "8.0"
+  s.platform     = :ios, "8.0"
 
   #  When using multiple platforms
   # s.ios.deployment_target = "5.0"
@@ -91,7 +91,7 @@ Log redirection output tool for iOS, you can set the Log level, redirect output 
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "ZJLog/{ZJ}*.{h,m,mm}"
+  s.source_files  = "ZJLog/ZJLog/{ZJ}*.{h,m,mm}"
   #s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
