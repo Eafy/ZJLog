@@ -15,7 +15,7 @@
 		0C14C94C21DDA3BA00A1C1F7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C14C94B21DDA3BA00A1C1F7 /* main.m */; };
 		0C14C95621DDA3BB00A1C1F7 /* ZJLogDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C14C95521DDA3BB00A1C1F7 /* ZJLogDemoTests.m */; };
 		0C14C96121DDA3BB00A1C1F7 /* ZJLogDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C14C96021DDA3BB00A1C1F7 /* ZJLogDemoUITests.m */; };
-		CEFC2D3D46D0A04FEF68E2B1 /* Pods_ZJLogDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F73AAB276EED2D5B726FC0E /* Pods_ZJLogDemo.framework */; };
+		0C85227221E4A21A000E122B /* ZJLog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C85227121E4A21A000E122B /* ZJLog.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +32,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = 0C14C93821DDA3B900A1C1F7;
 			remoteInfo = ZJLogDemo;
+		};
+		0C85226D21E4A203000E122B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C85226821E4A203000E122B /* ZJLog.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0C14C91421DCB1F500A1C1F7;
+			remoteInfo = ZJLog;
+		};
+		0C85226F21E4A203000E122B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C85226821E4A203000E122B /* ZJLog.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0C14C91D21DCB1F600A1C1F7;
+			remoteInfo = ZJLogTests;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -52,6 +66,8 @@
 		0C14C95C21DDA3BB00A1C1F7 /* ZJLogDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZJLogDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C14C96021DDA3BB00A1C1F7 /* ZJLogDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJLogDemoUITests.m; sourceTree = "<group>"; };
 		0C14C96221DDA3BB00A1C1F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C85226821E4A203000E122B /* ZJLog.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ZJLog.xcodeproj; path = ../ZJLog/ZJLog.xcodeproj; sourceTree = "<group>"; };
+		0C85227121E4A21A000E122B /* ZJLog.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ZJLog.framework; path = "../../../../Library/Developer/Xcode/DerivedData/ZJLogDemo-gzmsufckvbcpsaehncmhqokbbqpt/Build/Products/Debug-iphonesimulator/ZJLog.framework"; sourceTree = "<group>"; };
 		0F73AAB276EED2D5B726FC0E /* Pods_ZJLogDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZJLogDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		50CAC676CBAA1078DE4356B8 /* Pods-ZJLogDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZJLogDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZJLogDemo/Pods-ZJLogDemo.release.xcconfig"; sourceTree = "<group>"; };
 		E64E21ABA73E94D639D757EA /* Pods-ZJLogDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZJLogDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZJLogDemo/Pods-ZJLogDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -62,7 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEFC2D3D46D0A04FEF68E2B1 /* Pods_ZJLogDemo.framework in Frameworks */,
+				0C85227221E4A21A000E122B /* ZJLog.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +102,7 @@
 		0C14C93021DDA3B900A1C1F7 = {
 			isa = PBXGroup;
 			children = (
+				0C85226821E4A203000E122B /* ZJLog.xcodeproj */,
 				0C14C93B21DDA3B900A1C1F7 /* ZJLogDemo */,
 				0C14C95421DDA3BB00A1C1F7 /* ZJLogDemoTests */,
 				0C14C95F21DDA3BB00A1C1F7 /* ZJLogDemoUITests */,
@@ -139,6 +156,15 @@
 			path = ZJLogDemoUITests;
 			sourceTree = "<group>";
 		};
+		0C85226921E4A203000E122B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0C85226E21E4A203000E122B /* ZJLog.framework */,
+				0C85227021E4A203000E122B /* ZJLogTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		7A91A0118A4C8576CE855CC2 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -151,6 +177,7 @@
 		974543CC16B230AE34479ED5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0C85227121E4A21A000E122B /* ZJLog.framework */,
 				0F73AAB276EED2D5B726FC0E /* Pods_ZJLogDemo.framework */,
 			);
 			name = Frameworks;
@@ -248,6 +275,12 @@
 			mainGroup = 0C14C93021DDA3B900A1C1F7;
 			productRefGroup = 0C14C93A21DDA3B900A1C1F7 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 0C85226921E4A203000E122B /* Products */;
+					ProjectRef = 0C85226821E4A203000E122B /* ZJLog.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				0C14C93821DDA3B900A1C1F7 /* ZJLogDemo */,
@@ -256,6 +289,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		0C85226E21E4A203000E122B /* ZJLog.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ZJLog.framework;
+			remoteRef = 0C85226D21E4A203000E122B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0C85227021E4A203000E122B /* ZJLogTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ZJLogTests.xctest;
+			remoteRef = 0C85226F21E4A203000E122B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		0C14C93721DDA3B900A1C1F7 /* Resources */ = {
@@ -520,7 +570,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EB9K2L27BQ;
 				INFOPLIST_FILE = ZJLogDemo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.lzj.ZJLogDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -535,7 +588,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EB9K2L27BQ;
 				INFOPLIST_FILE = ZJLogDemo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.lzj.ZJLogDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -549,7 +605,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EB9K2L27BQ;
 				INFOPLIST_FILE = ZJLogDemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.lzj.ZJLogDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -564,7 +624,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EB9K2L27BQ;
 				INFOPLIST_FILE = ZJLogDemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.lzj.ZJLogDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -578,7 +642,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EB9K2L27BQ;
 				INFOPLIST_FILE = ZJLogDemoUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.lzj.ZJLogDemoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -592,7 +660,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EB9K2L27BQ;
 				INFOPLIST_FILE = ZJLogDemoUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.lzj.ZJLogDemoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
