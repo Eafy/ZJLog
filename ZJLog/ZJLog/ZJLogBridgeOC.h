@@ -20,58 +20,59 @@
 #define CPrintf_ERROR 4         //错误信息打印
 #define kNeedDifLevelValue      //需要声明级别变量
 extern int mCPrintfLevelValue;  //当前级别
+extern void CPrintfSendCallback(char *log);
 #endif
 
 #define CPrintf(...)  \
 {\
-if (mCPrintfLevelValue <= CPrintf_DEBUG) {\
-char cLogBuf[1024] = {0};\
-snprintf((char *)cLogBuf, 1024, __VA_ARGS__);\
-CPrintfSendCallback(cLogBuf);\
-}\
+    if (mCPrintfLevelValue <= CPrintf_DEBUG) {\
+        char cLogBuf[1024] = {0};\
+        snprintf((char *)cLogBuf, 1024, __VA_ARGS__);\
+        CPrintfSendCallback(cLogBuf);\
+    }\
 };
 
 #define CPrintfV(...)  \
 {\
-char cLogBuf[1024] = {0};\
-snprintf((char *)cLogBuf, 1024, __VA_ARGS__);\
-CPrintfSendCallback(cLogBuf);\
+    char cLogBuf[1024] = {0};\
+    snprintf((char *)cLogBuf, 1024, __VA_ARGS__);\
+    CPrintfSendCallback(cLogBuf);\
 };
 
 #define CPrintfD(...)  \
 {\
-if (mCPrintfLevelValue <= CPrintf_DEBUG) {\
-char cLogBuf[1024] = {0};\
-snprintf((char *)cLogBuf, 1024, __VA_ARGS__);\
-CPrintfSendCallback(cLogBuf);\
-}\
+    if (mCPrintfLevelValue <= CPrintf_DEBUG) {\
+        char cLogBuf[1024] = {0};\
+        snprintf((char *)cLogBuf, 1024, __VA_ARGS__);\
+        CPrintfSendCallback(cLogBuf);\
+    }\
 };
 
 #define CPrintfI(...)  \
 {\
-if (mCPrintfLevelValue <= CPrintf_INFO) {\
-char cLogBuf[1024] = {0};\
-snprintf((char *)cLogBuf, 1024, __VA_ARGS__);\
-CPrintfSendCallback(cLogBuf);\
-}\
+    if (mCPrintfLevelValue <= CPrintf_INFO) {\
+        char cLogBuf[1024] = {0};\
+        snprintf((char *)cLogBuf, 1024, __VA_ARGS__);\
+        CPrintfSendCallback(cLogBuf);\
+    }\
 };
 
 #define CPrintfW(...)  \
 {\
-if (mCPrintfLevelValue <= CPrintf_WARN) {\
-char cLogBuf[1024] = {0};\
-snprintf((char *)cLogBuf, 1024, __VA_ARGS__);\
-CPrintfSendCallback(cLogBuf);\
-}\
+    if (mCPrintfLevelValue <= CPrintf_WARN) {\
+        char cLogBuf[1024] = {0};\
+        snprintf((char *)cLogBuf, 1024, __VA_ARGS__);\
+        CPrintfSendCallback(cLogBuf);\
+    }\
 };
 
 #define CPrintfE(...)  \
 {\
-if (mCPrintfLevelValue <= CPrintf_ERROR) {\
-char cLogBuf[1024] = {0};\
-snprintf((char *)cLogBuf, 1024, __VA_ARGS__);\
-CPrintfSendCallback(cLogBuf);\
-}\
+    if (mCPrintfLevelValue <= CPrintf_ERROR) {\
+        char cLogBuf[1024] = {0};\
+        snprintf((char *)cLogBuf, 1024, __VA_ARGS__);\
+        CPrintfSendCallback(cLogBuf);\
+    }\
 };
 
 #define CPrintfLine printf("%s---->%d\n", __func__, __LINE__);

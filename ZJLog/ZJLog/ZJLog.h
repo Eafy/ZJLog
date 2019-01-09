@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "ZJLogBridgeC.h"
 #import "ZJLogBridgeOC.h"
 
 #define CLog(...) [ZJLog log:[NSString stringWithFormat:__VA_ARGS__]]

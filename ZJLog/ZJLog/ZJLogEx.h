@@ -13,7 +13,6 @@
 #import "Singleton.h"
 
 extern void CPrintfSendCallback(char * _Nullable log);
-extern void CPrintfShowCallback(char *_Nullable log);
 extern int mCPrintfLevelValue;
 
 @interface ZJLog ()

@@ -11,5 +11,5 @@
 
 void CPrintfSendCallback(char *log)
 {
-    [[ZJLog sharedTool] sendLogStr:[NSString stringWithFormat:@"%s", log]];
+    [ZJLog log:[NSString stringWithUTF8String:log]];
 }
