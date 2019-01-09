@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "ZJLog"
-  s.version      = "1.0.5"
+  s.version      = "1.0.6"
   s.summary      = "Log redirection output tool for iOS."
 
   # This description is used to generate tags and improve search results.
