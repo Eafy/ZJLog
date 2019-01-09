@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import <ZJLog/ZJLog.h>
+#import "Test.h"
 
 @interface ViewController () <ZJLogDelegate>
 
@@ -18,10 +19,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-//    [ZJLog setDelegate:self];     //若没有将SDK日志写入文件的需求，不需要设置代理，一旦设置代理，SDK日志走代理方法
-//    [ZJLog saveLog:YES];
+    [ZJLog setDelegate:self];     //若没有将SDK日志写入文件的需求，不需要设置代理，一旦设置代理，SDK日志走代理方法
+    [ZJLog setSave:YES];
 
     CLog(@"123");
+    CPrintf("%s", "12345");
+    testLog();
 }
 
 - (void)didReceiveLogString:(NSString *)logStr

@@ -17,7 +17,7 @@ extern void CPrintfShowCallback(char *_Nullable log);
 extern int mCPrintfLevelValue;
 
 @interface ZJLog ()
-singleton_h(Tool);
+singleton_h(Tool)
 
 @property (nonatomic,weak) id<ZJLogDelegate> _Nullable delegate;
 

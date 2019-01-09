@@ -15,7 +15,9 @@
 		0C14C94C21DDA3BA00A1C1F7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C14C94B21DDA3BA00A1C1F7 /* main.m */; };
 		0C14C95621DDA3BB00A1C1F7 /* ZJLogDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C14C95521DDA3BB00A1C1F7 /* ZJLogDemoTests.m */; };
 		0C14C96121DDA3BB00A1C1F7 /* ZJLogDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C14C96021DDA3BB00A1C1F7 /* ZJLogDemoUITests.m */; };
-		0C85227221E4A21A000E122B /* ZJLog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C85227121E4A21A000E122B /* ZJLog.framework */; };
+		0C85228221E59C7A000E122B /* Test.c in Sources */ = {isa = PBXBuildFile; fileRef = 0C85228121E59C7A000E122B /* Test.c */; };
+		0C8522C921E5A226000E122B /* libZJLog.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C8522C821E5A226000E122B /* libZJLog.a */; };
+		0C8522CB21E5A737000E122B /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C8522CA21E5A737000E122B /* libc++.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,20 +34,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 0C14C93821DDA3B900A1C1F7;
 			remoteInfo = ZJLogDemo;
-		};
-		0C85226D21E4A203000E122B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0C85226821E4A203000E122B /* ZJLog.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 0C14C91421DCB1F500A1C1F7;
-			remoteInfo = ZJLog;
-		};
-		0C85226F21E4A203000E122B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0C85226821E4A203000E122B /* ZJLog.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 0C14C91D21DCB1F600A1C1F7;
-			remoteInfo = ZJLogTests;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -66,8 +54,13 @@
 		0C14C95C21DDA3BB00A1C1F7 /* ZJLogDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZJLogDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C14C96021DDA3BB00A1C1F7 /* ZJLogDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJLogDemoUITests.m; sourceTree = "<group>"; };
 		0C14C96221DDA3BB00A1C1F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0C85226821E4A203000E122B /* ZJLog.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ZJLog.xcodeproj; path = ../ZJLog/ZJLog.xcodeproj; sourceTree = "<group>"; };
-		0C85227121E4A21A000E122B /* ZJLog.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ZJLog.framework; path = "../../../../Library/Developer/Xcode/DerivedData/ZJLogDemo-gzmsufckvbcpsaehncmhqokbbqpt/Build/Products/Debug-iphonesimulator/ZJLog.framework"; sourceTree = "<group>"; };
+		0C85228021E59C7A000E122B /* Test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Test.h; sourceTree = "<group>"; };
+		0C85228121E59C7A000E122B /* Test.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Test.c; sourceTree = "<group>"; };
+		0C8522C321E5A0B5000E122B /* ZJLogBridgeC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJLogBridgeC.h; sourceTree = "<group>"; };
+		0C8522C421E5A0B5000E122B /* ZJLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJLog.h; sourceTree = "<group>"; };
+		0C8522C521E5A0B5000E122B /* ZJLogBridgeOC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJLogBridgeOC.h; sourceTree = "<group>"; };
+		0C8522C821E5A226000E122B /* libZJLog.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libZJLog.a; sourceTree = "<group>"; };
+		0C8522CA21E5A737000E122B /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		0F73AAB276EED2D5B726FC0E /* Pods_ZJLogDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZJLogDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		50CAC676CBAA1078DE4356B8 /* Pods-ZJLogDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZJLogDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZJLogDemo/Pods-ZJLogDemo.release.xcconfig"; sourceTree = "<group>"; };
 		E64E21ABA73E94D639D757EA /* Pods-ZJLogDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZJLogDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZJLogDemo/Pods-ZJLogDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -78,7 +71,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C85227221E4A21A000E122B /* ZJLog.framework in Frameworks */,
+				0C8522CB21E5A737000E122B /* libc++.tbd in Frameworks */,
+				0C8522C921E5A226000E122B /* libZJLog.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,7 +96,6 @@
 		0C14C93021DDA3B900A1C1F7 = {
 			isa = PBXGroup;
 			children = (
-				0C85226821E4A203000E122B /* ZJLog.xcodeproj */,
 				0C14C93B21DDA3B900A1C1F7 /* ZJLogDemo */,
 				0C14C95421DDA3BB00A1C1F7 /* ZJLogDemoTests */,
 				0C14C95F21DDA3BB00A1C1F7 /* ZJLogDemoUITests */,
@@ -134,6 +127,9 @@
 				0C14C94721DDA3BA00A1C1F7 /* LaunchScreen.storyboard */,
 				0C14C94A21DDA3BA00A1C1F7 /* Info.plist */,
 				0C14C94B21DDA3BA00A1C1F7 /* main.m */,
+				0C85228021E59C7A000E122B /* Test.h */,
+				0C85228121E59C7A000E122B /* Test.c */,
+				0C8522C221E5A0B5000E122B /* ZJLog */,
 			);
 			path = ZJLogDemo;
 			sourceTree = "<group>";
@@ -156,13 +152,14 @@
 			path = ZJLogDemoUITests;
 			sourceTree = "<group>";
 		};
-		0C85226921E4A203000E122B /* Products */ = {
+		0C8522C221E5A0B5000E122B /* ZJLog */ = {
 			isa = PBXGroup;
 			children = (
-				0C85226E21E4A203000E122B /* ZJLog.framework */,
-				0C85227021E4A203000E122B /* ZJLogTests.xctest */,
+				0C8522C321E5A0B5000E122B /* ZJLogBridgeC.h */,
+				0C8522C421E5A0B5000E122B /* ZJLog.h */,
+				0C8522C521E5A0B5000E122B /* ZJLogBridgeOC.h */,
 			);
-			name = Products;
+			path = ZJLog;
 			sourceTree = "<group>";
 		};
 		7A91A0118A4C8576CE855CC2 /* Pods */ = {
@@ -177,7 +174,8 @@
 		974543CC16B230AE34479ED5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0C85227121E4A21A000E122B /* ZJLog.framework */,
+				0C8522CA21E5A737000E122B /* libc++.tbd */,
+				0C8522C821E5A226000E122B /* libZJLog.a */,
 				0F73AAB276EED2D5B726FC0E /* Pods_ZJLogDemo.framework */,
 			);
 			name = Frameworks;
@@ -275,12 +273,6 @@
 			mainGroup = 0C14C93021DDA3B900A1C1F7;
 			productRefGroup = 0C14C93A21DDA3B900A1C1F7 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 0C85226921E4A203000E122B /* Products */;
-					ProjectRef = 0C85226821E4A203000E122B /* ZJLog.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				0C14C93821DDA3B900A1C1F7 /* ZJLogDemo */,
@@ -289,23 +281,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		0C85226E21E4A203000E122B /* ZJLog.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = ZJLog.framework;
-			remoteRef = 0C85226D21E4A203000E122B /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		0C85227021E4A203000E122B /* ZJLogTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = ZJLogTests.xctest;
-			remoteRef = 0C85226F21E4A203000E122B /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		0C14C93721DDA3B900A1C1F7 /* Resources */ = {
@@ -374,16 +349,14 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-ZJLogDemo/Pods-ZJLogDemo-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/ZJLog/ZJLog.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZJLog.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZJLogDemo/Pods-ZJLogDemo-frameworks.sh\"\n";
+			shellScript = "
+";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -396,6 +369,7 @@
 				0C14C94121DDA3B900A1C1F7 /* ViewController.m in Sources */,
 				0C14C94C21DDA3BA00A1C1F7 /* main.m in Sources */,
 				0C14C93E21DDA3B900A1C1F7 /* AppDelegate.m in Sources */,
+				0C85228221E59C7A000E122B /* Test.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -569,11 +543,22 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EB9K2L27BQ;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = ZJLogDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lzj.ZJLogDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -587,11 +572,22 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EB9K2L27BQ;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = ZJLogDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lzj.ZJLogDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";

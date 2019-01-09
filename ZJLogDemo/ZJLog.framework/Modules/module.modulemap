@@ -1,0 +1,6 @@
+framework module ZJLog {
+  umbrella header "ZJLog.h"
+
+  export *
+  module * { export * }
+}

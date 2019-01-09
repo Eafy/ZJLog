@@ -7,139 +7,98 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0C14C91E21DCB1F600A1C1F7 /* ZJLog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C14C91421DCB1F500A1C1F7 /* ZJLog.framework */; };
-		0C14C92321DCB1F600A1C1F7 /* ZJLogTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C14C92221DCB1F600A1C1F7 /* ZJLogTests.m */; };
-		0C14C92521DCB1F600A1C1F7 /* ZJLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C14C91721DCB1F500A1C1F7 /* ZJLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0C14C92F21DCB27D00A1C1F7 /* ZJLog.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0C14C92E21DCB27D00A1C1F7 /* ZJLog.mm */; };
-		0C85224B21E49B7A000E122B /* ZJLogEx.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C85224A21E49B78000E122B /* ZJLogEx.h */; };
-		0C85225021E49BB6000E122B /* ZJLogBridgeC.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C85224E21E49BB6000E122B /* ZJLogBridgeC.h */; };
-		0C85225121E49BB6000E122B /* ZJLogBridgeC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C85224F21E49BB6000E122B /* ZJLogBridgeC.m */; };
-		0C85225421E49BD0000E122B /* ZJLogWriteManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C85225221E49BD0000E122B /* ZJLogWriteManager.h */; };
-		0C85225521E49BD0000E122B /* ZJLogWriteManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C85225321E49BD0000E122B /* ZJLogWriteManager.m */; };
-		0C85225821E49BE5000E122B /* ZJLogBridgeOC.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C85225621E49BE5000E122B /* ZJLogBridgeOC.h */; };
-		0C85225921E49BE5000E122B /* ZJLogBridgeOC.c in Sources */ = {isa = PBXBuildFile; fileRef = 0C85225721E49BE5000E122B /* ZJLogBridgeOC.c */; };
-		0C85225B21E49C80000E122B /* Singleton.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C85225A21E49C80000E122B /* Singleton.h */; };
+		0C8522B821E5A031000E122B /* ZJLog.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0C8522AE21E5A030000E122B /* ZJLog.mm */; };
+		0C8522B921E5A031000E122B /* ZJLogBridgeOC.c in Sources */ = {isa = PBXBuildFile; fileRef = 0C8522B221E5A030000E122B /* ZJLogBridgeOC.c */; };
+		0C8522BA21E5A031000E122B /* ZJLogBridgeC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8522B321E5A030000E122B /* ZJLogBridgeC.m */; };
+		0C8522BB21E5A031000E122B /* ZJLogWriteManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8522B721E5A031000E122B /* ZJLogWriteManager.m */; };
+		0C8522BC21E5A06F000E122B /* ZJLog.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0C8522B421E5A030000E122B /* ZJLog.h */; };
+		0C8522BD21E5A072000E122B /* ZJLogBridgeC.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0C8522B621E5A030000E122B /* ZJLogBridgeC.h */; };
+		0C8522BE21E5A076000E122B /* ZJLogBridgeOC.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0C8522B121E5A030000E122B /* ZJLogBridgeOC.h */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		0C14C91F21DCB1F600A1C1F7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0C14C90B21DCB1F500A1C1F7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0C14C91321DCB1F500A1C1F7;
-			remoteInfo = ZJLog;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		0C14C91421DCB1F500A1C1F7 /* ZJLog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZJLog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0C14C91721DCB1F500A1C1F7 /* ZJLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZJLog.h; sourceTree = "<group>"; };
-		0C14C91821DCB1F500A1C1F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0C14C91D21DCB1F600A1C1F7 /* ZJLogTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZJLogTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0C14C92221DCB1F600A1C1F7 /* ZJLogTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJLogTests.m; sourceTree = "<group>"; };
-		0C14C92421DCB1F600A1C1F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0C14C92E21DCB27D00A1C1F7 /* ZJLog.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ZJLog.mm; sourceTree = "<group>"; };
-		0C85224A21E49B78000E122B /* ZJLogEx.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZJLogEx.h; sourceTree = "<group>"; };
-		0C85224E21E49BB6000E122B /* ZJLogBridgeC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZJLogBridgeC.h; sourceTree = "<group>"; };
-		0C85224F21E49BB6000E122B /* ZJLogBridgeC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJLogBridgeC.m; sourceTree = "<group>"; };
-		0C85225221E49BD0000E122B /* ZJLogWriteManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZJLogWriteManager.h; sourceTree = "<group>"; };
-		0C85225321E49BD0000E122B /* ZJLogWriteManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJLogWriteManager.m; sourceTree = "<group>"; };
-		0C85225621E49BE5000E122B /* ZJLogBridgeOC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZJLogBridgeOC.h; sourceTree = "<group>"; };
-		0C85225721E49BE5000E122B /* ZJLogBridgeOC.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ZJLogBridgeOC.c; sourceTree = "<group>"; };
-		0C85225A21E49C80000E122B /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		0C14C91121DCB1F500A1C1F7 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
+/* Begin PBXCopyFilesBuildPhase section */
+		0C8522A021E5A014000E122B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
 			files = (
+				0C8522BE21E5A076000E122B /* ZJLogBridgeOC.h in CopyFiles */,
+				0C8522BD21E5A072000E122B /* ZJLogBridgeC.h in CopyFiles */,
+				0C8522BC21E5A06F000E122B /* ZJLog.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0C14C91A21DCB1F600A1C1F7 /* Frameworks */ = {
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0C8522A221E5A014000E122B /* libZJLog.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libZJLog.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C8522AE21E5A030000E122B /* ZJLog.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ZJLog.mm; sourceTree = "<group>"; };
+		0C8522AF21E5A030000E122B /* ZJLogWriteManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJLogWriteManager.h; sourceTree = "<group>"; };
+		0C8522B021E5A030000E122B /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
+		0C8522B121E5A030000E122B /* ZJLogBridgeOC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJLogBridgeOC.h; sourceTree = "<group>"; };
+		0C8522B221E5A030000E122B /* ZJLogBridgeOC.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ZJLogBridgeOC.c; sourceTree = "<group>"; };
+		0C8522B321E5A030000E122B /* ZJLogBridgeC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJLogBridgeC.m; sourceTree = "<group>"; };
+		0C8522B421E5A030000E122B /* ZJLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJLog.h; sourceTree = "<group>"; };
+		0C8522B521E5A030000E122B /* ZJLogEx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJLogEx.h; sourceTree = "<group>"; };
+		0C8522B621E5A030000E122B /* ZJLogBridgeC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJLogBridgeC.h; sourceTree = "<group>"; };
+		0C8522B721E5A031000E122B /* ZJLogWriteManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJLogWriteManager.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0C85229F21E5A014000E122B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C14C91E21DCB1F600A1C1F7 /* ZJLog.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0C14C90A21DCB1F500A1C1F7 = {
+		0C85229921E5A014000E122B = {
 			isa = PBXGroup;
 			children = (
-				0C14C91621DCB1F500A1C1F7 /* ZJLog */,
-				0C14C92121DCB1F600A1C1F7 /* ZJLogTests */,
-				0C14C91521DCB1F500A1C1F7 /* Products */,
+				0C8522A421E5A014000E122B /* ZJLog */,
+				0C8522A321E5A014000E122B /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		0C14C91521DCB1F500A1C1F7 /* Products */ = {
+		0C8522A321E5A014000E122B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0C14C91421DCB1F500A1C1F7 /* ZJLog.framework */,
-				0C14C91D21DCB1F600A1C1F7 /* ZJLogTests.xctest */,
+				0C8522A221E5A014000E122B /* libZJLog.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0C14C91621DCB1F500A1C1F7 /* ZJLog */ = {
+		0C8522A421E5A014000E122B /* ZJLog */ = {
 			isa = PBXGroup;
 			children = (
-				0C85224A21E49B78000E122B /* ZJLogEx.h */,
-				0C14C91721DCB1F500A1C1F7 /* ZJLog.h */,
-				0C14C92E21DCB27D00A1C1F7 /* ZJLog.mm */,
-				0C85225A21E49C80000E122B /* Singleton.h */,
-				0C85224E21E49BB6000E122B /* ZJLogBridgeC.h */,
-				0C85224F21E49BB6000E122B /* ZJLogBridgeC.m */,
-				0C85225221E49BD0000E122B /* ZJLogWriteManager.h */,
-				0C85225321E49BD0000E122B /* ZJLogWriteManager.m */,
-				0C85225621E49BE5000E122B /* ZJLogBridgeOC.h */,
-				0C85225721E49BE5000E122B /* ZJLogBridgeOC.c */,
-				0C14C91821DCB1F500A1C1F7 /* Info.plist */,
+				0C8522B521E5A030000E122B /* ZJLogEx.h */,
+				0C8522B421E5A030000E122B /* ZJLog.h */,
+				0C8522AE21E5A030000E122B /* ZJLog.mm */,
+				0C8522B021E5A030000E122B /* Singleton.h */,
+				0C8522B621E5A030000E122B /* ZJLogBridgeC.h */,
+				0C8522B321E5A030000E122B /* ZJLogBridgeC.m */,
+				0C8522AF21E5A030000E122B /* ZJLogWriteManager.h */,
+				0C8522B721E5A031000E122B /* ZJLogWriteManager.m */,
+				0C8522B121E5A030000E122B /* ZJLogBridgeOC.h */,
+				0C8522B221E5A030000E122B /* ZJLogBridgeOC.c */,
 			);
 			path = ZJLog;
 			sourceTree = "<group>";
 		};
-		0C14C92121DCB1F600A1C1F7 /* ZJLogTests */ = {
-			isa = PBXGroup;
-			children = (
-				0C14C92221DCB1F600A1C1F7 /* ZJLogTests.m */,
-				0C14C92421DCB1F600A1C1F7 /* Info.plist */,
-			);
-			path = ZJLogTests;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
-/* Begin PBXHeadersBuildPhase section */
-		0C14C90F21DCB1F500A1C1F7 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0C85225B21E49C80000E122B /* Singleton.h in Headers */,
-				0C85225021E49BB6000E122B /* ZJLogBridgeC.h in Headers */,
-				0C85225421E49BD0000E122B /* ZJLogWriteManager.h in Headers */,
-				0C85224B21E49B7A000E122B /* ZJLogEx.h in Headers */,
-				0C14C92521DCB1F600A1C1F7 /* ZJLog.h in Headers */,
-				0C85225821E49BE5000E122B /* ZJLogBridgeOC.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
 /* Begin PBXNativeTarget section */
-		0C14C91321DCB1F500A1C1F7 /* ZJLog */ = {
+		0C8522A121E5A014000E122B /* ZJLog */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0C14C92821DCB1F600A1C1F7 /* Build configuration list for PBXNativeTarget "ZJLog" */;
+			buildConfigurationList = 0C8522AB21E5A014000E122B /* Build configuration list for PBXNativeTarget "ZJLog" */;
 			buildPhases = (
-				0C14C90F21DCB1F500A1C1F7 /* Headers */,
-				0C14C91021DCB1F500A1C1F7 /* Sources */,
-				0C14C91121DCB1F500A1C1F7 /* Frameworks */,
-				0C14C91221DCB1F500A1C1F7 /* Resources */,
+				0C85229E21E5A014000E122B /* Sources */,
+				0C85229F21E5A014000E122B /* Frameworks */,
+				0C8522A021E5A014000E122B /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -147,111 +106,56 @@
 			);
 			name = ZJLog;
 			productName = ZJLog;
-			productReference = 0C14C91421DCB1F500A1C1F7 /* ZJLog.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		0C14C91C21DCB1F600A1C1F7 /* ZJLogTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0C14C92B21DCB1F600A1C1F7 /* Build configuration list for PBXNativeTarget "ZJLogTests" */;
-			buildPhases = (
-				0C14C91921DCB1F600A1C1F7 /* Sources */,
-				0C14C91A21DCB1F600A1C1F7 /* Frameworks */,
-				0C14C91B21DCB1F600A1C1F7 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				0C14C92021DCB1F600A1C1F7 /* PBXTargetDependency */,
-			);
-			name = ZJLogTests;
-			productName = ZJLogTests;
-			productReference = 0C14C91D21DCB1F600A1C1F7 /* ZJLogTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
+			productReference = 0C8522A221E5A014000E122B /* libZJLog.a */;
+			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		0C14C90B21DCB1F500A1C1F7 /* Project object */ = {
+		0C85229A21E5A014000E122B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = ZJ;
 				TargetAttributes = {
-					0C14C91321DCB1F500A1C1F7 = {
-						CreatedOnToolsVersion = 10.1;
-					};
-					0C14C91C21DCB1F600A1C1F7 = {
+					0C8522A121E5A014000E122B = {
 						CreatedOnToolsVersion = 10.1;
 					};
 				};
 			};
-			buildConfigurationList = 0C14C90E21DCB1F500A1C1F7 /* Build configuration list for PBXProject "ZJLog" */;
+			buildConfigurationList = 0C85229D21E5A014000E122B /* Build configuration list for PBXProject "ZJLog" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 0C14C90A21DCB1F500A1C1F7;
-			productRefGroup = 0C14C91521DCB1F500A1C1F7 /* Products */;
+			mainGroup = 0C85229921E5A014000E122B;
+			productRefGroup = 0C8522A321E5A014000E122B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0C14C91321DCB1F500A1C1F7 /* ZJLog */,
-				0C14C91C21DCB1F600A1C1F7 /* ZJLogTests */,
+				0C8522A121E5A014000E122B /* ZJLog */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXResourcesBuildPhase section */
-		0C14C91221DCB1F500A1C1F7 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0C14C91B21DCB1F600A1C1F7 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		0C14C91021DCB1F500A1C1F7 /* Sources */ = {
+		0C85229E21E5A014000E122B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C85225521E49BD0000E122B /* ZJLogWriteManager.m in Sources */,
-				0C85225921E49BE5000E122B /* ZJLogBridgeOC.c in Sources */,
-				0C14C92F21DCB27D00A1C1F7 /* ZJLog.mm in Sources */,
-				0C85225121E49BB6000E122B /* ZJLogBridgeC.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0C14C91921DCB1F600A1C1F7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0C14C92321DCB1F600A1C1F7 /* ZJLogTests.m in Sources */,
+				0C8522B821E5A031000E122B /* ZJLog.mm in Sources */,
+				0C8522BA21E5A031000E122B /* ZJLogBridgeC.m in Sources */,
+				0C8522BB21E5A031000E122B /* ZJLogWriteManager.m in Sources */,
+				0C8522B921E5A031000E122B /* ZJLogBridgeOC.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		0C14C92021DCB1F600A1C1F7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 0C14C91321DCB1F500A1C1F7 /* ZJLog */;
-			targetProxy = 0C14C91F21DCB1F600A1C1F7 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin XCBuildConfiguration section */
-		0C14C92621DCB1F600A1C1F7 /* Debug */ = {
+		0C8522A921E5A014000E122B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -285,7 +189,6 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -308,12 +211,10 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		0C14C92721DCB1F600A1C1F7 /* Release */ = {
+		0C8522AA21E5A014000E122B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -347,7 +248,6 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -364,91 +264,31 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		0C14C92921DCB1F600A1C1F7 /* Debug */ = {
+		0C8522AC21E5A014000E122B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
-				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = EB9K2L27BQ;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = ZJLog/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.lzj.ZJLog;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		0C14C92A21DCB1F600A1C1F7 /* Release */ = {
+		0C8522AD21E5A014000E122B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
-				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = EB9K2L27BQ;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = ZJLog/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.lzj.ZJLog;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		0C14C92C21DCB1F600A1C1F7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = EB9K2L27BQ;
-				INFOPLIST_FILE = ZJLogTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.lzj.ZJLogTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		0C14C92D21DCB1F600A1C1F7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = EB9K2L27BQ;
-				INFOPLIST_FILE = ZJLogTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.lzj.ZJLogTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -456,34 +296,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0C14C90E21DCB1F500A1C1F7 /* Build configuration list for PBXProject "ZJLog" */ = {
+		0C85229D21E5A014000E122B /* Build configuration list for PBXProject "ZJLog" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0C14C92621DCB1F600A1C1F7 /* Debug */,
-				0C14C92721DCB1F600A1C1F7 /* Release */,
+				0C8522A921E5A014000E122B /* Debug */,
+				0C8522AA21E5A014000E122B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0C14C92821DCB1F600A1C1F7 /* Build configuration list for PBXNativeTarget "ZJLog" */ = {
+		0C8522AB21E5A014000E122B /* Build configuration list for PBXNativeTarget "ZJLog" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0C14C92921DCB1F600A1C1F7 /* Debug */,
-				0C14C92A21DCB1F600A1C1F7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		0C14C92B21DCB1F600A1C1F7 /* Build configuration list for PBXNativeTarget "ZJLogTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0C14C92C21DCB1F600A1C1F7 /* Debug */,
-				0C14C92D21DCB1F600A1C1F7 /* Release */,
+				0C8522AC21E5A014000E122B /* Debug */,
+				0C8522AD21E5A014000E122B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 0C14C90B21DCB1F500A1C1F7 /* Project object */;
+	rootObject = 0C85229A21E5A014000E122B /* Project object */;
 }

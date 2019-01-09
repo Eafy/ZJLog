@@ -91,7 +91,7 @@ Log redirection output tool for iOS, you can set the Log level, redirect output 
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "ZJLog/ZJLog/{ZJ}*.{h,m,mm}"
+  s.source_files  = "ZJLog/ZJLog/{ZJ}*.{h,m,mm,c}"
   #s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"

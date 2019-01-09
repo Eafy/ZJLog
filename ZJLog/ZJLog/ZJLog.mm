@@ -19,7 +19,7 @@
 @end
 
 @implementation ZJLog
-singleton_m(Tool);
+singleton_m(Tool)
 
 - (void)initData
 {
@@ -98,7 +98,7 @@ singleton_m(Tool);
     }
 }
 
-+ (void)saveLog:(BOOL)isSave
++ (void)setSave:(BOOL)isSave
 {
     [ZJLog sharedTool].saveEnable = isSave;
 }
