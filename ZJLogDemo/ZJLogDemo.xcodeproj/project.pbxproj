@@ -15,6 +15,8 @@
 		0C8522EB21E5D748000E122B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8522EA21E5D748000E122B /* main.m */; };
 		0C8522F521E5D749000E122B /* ZJLogDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8522F421E5D749000E122B /* ZJLogDemoTests.m */; };
 		0C85230021E5D749000E122B /* ZJLogDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8522FF21E5D749000E122B /* ZJLogDemoUITests.m */; };
+		0C85231021E5E46F000E122B /* TestLog.c in Sources */ = {isa = PBXBuildFile; fileRef = 0C85230F21E5E46F000E122B /* TestLog.c */; };
+		41F54BC1E9F8F4F5CC003524 /* Pods_ZJLogDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9028584F0D5DAC275D90D380 /* Pods_ZJLogDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,11 @@
 		0C8522FB21E5D749000E122B /* ZJLogDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZJLogDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C8522FF21E5D749000E122B /* ZJLogDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJLogDemoUITests.m; sourceTree = "<group>"; };
 		0C85230121E5D749000E122B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C85230E21E5E46F000E122B /* TestLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestLog.h; sourceTree = "<group>"; };
+		0C85230F21E5E46F000E122B /* TestLog.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = TestLog.c; sourceTree = "<group>"; };
+		9028584F0D5DAC275D90D380 /* Pods_ZJLogDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZJLogDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1D67CBCEDC061978DF74354 /* Pods-ZJLogDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZJLogDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZJLogDemo/Pods-ZJLogDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		F3FD28B5C117219A35ED6718 /* Pods-ZJLogDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZJLogDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZJLogDemo/Pods-ZJLogDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41F54BC1E9F8F4F5CC003524 /* Pods_ZJLogDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +93,8 @@
 				0C8522F321E5D749000E122B /* ZJLogDemoTests */,
 				0C8522FE21E5D749000E122B /* ZJLogDemoUITests */,
 				0C8522D921E5D747000E122B /* Products */,
+				858592061043078B5F6758C2 /* Pods */,
+				8C083D1520C89C8143C2E5FF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,6 +120,8 @@
 				0C8522E621E5D748000E122B /* LaunchScreen.storyboard */,
 				0C8522E921E5D748000E122B /* Info.plist */,
 				0C8522EA21E5D748000E122B /* main.m */,
+				0C85230E21E5E46F000E122B /* TestLog.h */,
+				0C85230F21E5E46F000E122B /* TestLog.c */,
 			);
 			path = ZJLogDemo;
 			sourceTree = "<group>";
@@ -132,6 +144,23 @@
 			path = ZJLogDemoUITests;
 			sourceTree = "<group>";
 		};
+		858592061043078B5F6758C2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E1D67CBCEDC061978DF74354 /* Pods-ZJLogDemo.debug.xcconfig */,
+				F3FD28B5C117219A35ED6718 /* Pods-ZJLogDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8C083D1520C89C8143C2E5FF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9028584F0D5DAC275D90D380 /* Pods_ZJLogDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,9 +168,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0C85230421E5D749000E122B /* Build configuration list for PBXNativeTarget "ZJLogDemo" */;
 			buildPhases = (
+				050F44E6FF9EA5B8E301B925 /* [CP] Check Pods Manifest.lock */,
 				0C8522D421E5D747000E122B /* Sources */,
 				0C8522D521E5D747000E122B /* Frameworks */,
 				0C8522D621E5D747000E122B /* Resources */,
+				0760D210B7E878039B6A13F0 /* [CP] Embed Pods Frameworks */,
+				D05F58D20ABA78DDCA1F03A5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -257,11 +289,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		050F44E6FF9EA5B8E301B925 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZJLogDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0760D210B7E878039B6A13F0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ZJLogDemo/Pods-ZJLogDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ZJLog/ZJLog.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZJLog.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZJLogDemo/Pods-ZJLogDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D05F58D20ABA78DDCA1F03A5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZJLogDemo/Pods-ZJLogDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0C8522D421E5D747000E122B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C85231021E5E46F000E122B /* TestLog.c in Sources */,
 				0C8522E021E5D747000E122B /* ViewController.m in Sources */,
 				0C8522EB21E5D748000E122B /* main.m in Sources */,
 				0C8522DD21E5D747000E122B /* AppDelegate.m in Sources */,
@@ -433,6 +520,7 @@
 		};
 		0C85230521E5D749000E122B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1D67CBCEDC061978DF74354 /* Pods-ZJLogDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -451,6 +539,7 @@
 		};
 		0C85230621E5D749000E122B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3FD28B5C117219A35ED6718 /* Pods-ZJLogDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

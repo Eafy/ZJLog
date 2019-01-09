@@ -7,8 +7,10 @@
 //
 
 #import "ViewController.h"
+#import "ZJLog.h"
+#include "TestLog.h"
 
-@interface ViewController ()
+@interface ViewController () <ZJLogDelegate>
 
 @end
 
@@ -18,8 +20,23 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
 
-    
+    [ZJLog setEnable:YES];
+    [ZJLog setDelegate:self];
+    [ZJLog setLevel:ZJLOG_LEVEL_WARN];
+
+    CLog(@"CLog");
+    CPrintfV("OCFile: CPrintfV");
+    CPrintfD("OCFile: CPrintfD");
+    CPrintfI("OCFile: CPrintfI");
+    CPrintfW("OCFile: CPrintfW");
+    CPrintfE("OCFile: CPrintfE");
+
+    testLog();
 }
 
+- (void)didReceiveLogString:(NSString *)logStr
+{
+    NSLog(@"%@", logStr);
+}
 
 @end

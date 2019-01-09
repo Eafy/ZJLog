@@ -7,3 +7,13 @@
 //
 
 #include "TestLog.h"
+#include "ZJLogBridgeOC.h"
+
+void testLog()
+{
+    CPrintfV("OCFile: CPrintfV");
+    CPrintfD("OCFile: CPrintfD");
+    CPrintfI("OCFile: CPrintfI");
+    CPrintfW("OCFile: CPrintfW");
+    CPrintfE("OCFile: CPrintfE");
+}

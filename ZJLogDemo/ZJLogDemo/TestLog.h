@@ -11,4 +11,6 @@
 
 #include <stdio.h>
 
+extern void testLog();
+
 #endif /* TestLog_h */
