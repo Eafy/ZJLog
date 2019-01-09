@@ -16,7 +16,6 @@
 		0C14C95621DDA3BB00A1C1F7 /* ZJLogDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C14C95521DDA3BB00A1C1F7 /* ZJLogDemoTests.m */; };
 		0C14C96121DDA3BB00A1C1F7 /* ZJLogDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C14C96021DDA3BB00A1C1F7 /* ZJLogDemoUITests.m */; };
 		0C85228221E59C7A000E122B /* Test.c in Sources */ = {isa = PBXBuildFile; fileRef = 0C85228121E59C7A000E122B /* Test.c */; };
-		0C8522C921E5A226000E122B /* libZJLog.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C8522C821E5A226000E122B /* libZJLog.a */; };
 		0C8522CB21E5A737000E122B /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C8522CA21E5A737000E122B /* libc++.tbd */; };
 /* End PBXBuildFile section */
 
@@ -56,10 +55,6 @@
 		0C14C96221DDA3BB00A1C1F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0C85228021E59C7A000E122B /* Test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Test.h; sourceTree = "<group>"; };
 		0C85228121E59C7A000E122B /* Test.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Test.c; sourceTree = "<group>"; };
-		0C8522C321E5A0B5000E122B /* ZJLogBridgeC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJLogBridgeC.h; sourceTree = "<group>"; };
-		0C8522C421E5A0B5000E122B /* ZJLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJLog.h; sourceTree = "<group>"; };
-		0C8522C521E5A0B5000E122B /* ZJLogBridgeOC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJLogBridgeOC.h; sourceTree = "<group>"; };
-		0C8522C821E5A226000E122B /* libZJLog.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libZJLog.a; sourceTree = "<group>"; };
 		0C8522CA21E5A737000E122B /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		0F73AAB276EED2D5B726FC0E /* Pods_ZJLogDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZJLogDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		50CAC676CBAA1078DE4356B8 /* Pods-ZJLogDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZJLogDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZJLogDemo/Pods-ZJLogDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -72,7 +67,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C8522CB21E5A737000E122B /* libc++.tbd in Frameworks */,
-				0C8522C921E5A226000E122B /* libZJLog.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -129,7 +123,6 @@
 				0C14C94B21DDA3BA00A1C1F7 /* main.m */,
 				0C85228021E59C7A000E122B /* Test.h */,
 				0C85228121E59C7A000E122B /* Test.c */,
-				0C8522C221E5A0B5000E122B /* ZJLog */,
 			);
 			path = ZJLogDemo;
 			sourceTree = "<group>";
@@ -152,16 +145,6 @@
 			path = ZJLogDemoUITests;
 			sourceTree = "<group>";
 		};
-		0C8522C221E5A0B5000E122B /* ZJLog */ = {
-			isa = PBXGroup;
-			children = (
-				0C8522C321E5A0B5000E122B /* ZJLogBridgeC.h */,
-				0C8522C421E5A0B5000E122B /* ZJLog.h */,
-				0C8522C521E5A0B5000E122B /* ZJLogBridgeOC.h */,
-			);
-			path = ZJLog;
-			sourceTree = "<group>";
-		};
 		7A91A0118A4C8576CE855CC2 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -175,7 +158,6 @@
 			isa = PBXGroup;
 			children = (
 				0C8522CA21E5A737000E122B /* libc++.tbd */,
-				0C8522C821E5A226000E122B /* libZJLog.a */,
 				0F73AAB276EED2D5B726FC0E /* Pods_ZJLogDemo.framework */,
 			);
 			name = Frameworks;

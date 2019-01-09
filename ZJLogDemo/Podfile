@@ -6,6 +6,6 @@ target 'ZJLogDemo' do
     use_frameworks!
 
     # Pods for ZJLogDemo
-    pod 'ZJLog', '~>1.0.0'
+    pod 'ZJLog', '~>1.0.1'
 
 end

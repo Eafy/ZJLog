@@ -14,6 +14,7 @@
 		0C8522BC21E5A06F000E122B /* ZJLog.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0C8522B421E5A030000E122B /* ZJLog.h */; };
 		0C8522BD21E5A072000E122B /* ZJLogBridgeC.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0C8522B621E5A030000E122B /* ZJLogBridgeC.h */; };
 		0C8522BE21E5A076000E122B /* ZJLogBridgeOC.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0C8522B121E5A030000E122B /* ZJLogBridgeOC.h */; };
+		0C8522CE21E5D12B000E122B /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C8522CD21E5D12B000E122B /* libc++.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -43,6 +44,7 @@
 		0C8522B521E5A030000E122B /* ZJLogEx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJLogEx.h; sourceTree = "<group>"; };
 		0C8522B621E5A030000E122B /* ZJLogBridgeC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJLogBridgeC.h; sourceTree = "<group>"; };
 		0C8522B721E5A031000E122B /* ZJLogWriteManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJLogWriteManager.m; sourceTree = "<group>"; };
+		0C8522CD21E5D12B000E122B /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C8522CE21E5D12B000E122B /* libc++.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +64,7 @@
 			children = (
 				0C8522A421E5A014000E122B /* ZJLog */,
 				0C8522A321E5A014000E122B /* Products */,
+				0C8522CC21E5D12B000E122B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -87,6 +91,14 @@
 				0C8522B221E5A030000E122B /* ZJLogBridgeOC.c */,
 			);
 			path = ZJLog;
+			sourceTree = "<group>";
+		};
+		0C8522CC21E5D12B000E122B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0C8522CD21E5D12B000E122B /* libc++.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
