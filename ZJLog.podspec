@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "ZJLog"
-  s.version      = "1.0.6"
+  s.version      = "1.0.3"
   s.summary      = "Log redirection output tool for iOS."
 
   # This description is used to generate tags and improve search results.
@@ -91,10 +91,10 @@ Log redirection output tool for iOS, you can set the Log level, redirect output 
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "ZJLog/ZJLog/{ZJ}*.{h,m,mm,c}", "ZJLog/ZJLog/Singleton.h"
+  s.source_files  = "ZJLog/{ZJ}*.{h,m,mm,c}", "ZJLog/Singleton.h"
   #s.exclude_files = "Classes/Exclude"
 
-  #s.public_header_files = "ZJLog/ZJLog/ZJLog.h", "ZJLog/ZJLog/ZJLogBridgeOC.h"
+  #s.public_header_files = "/ZJLog/ZJLog.h", "/ZJLog/ZJLogBridgeOC.h"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
