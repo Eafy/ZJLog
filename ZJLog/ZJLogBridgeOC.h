@@ -20,6 +20,7 @@
 #define CPrintf_ERROR 4         //错误信息打印
 #define kNeedDifLevelValue      //需要声明级别变量
 extern int mCPrintfLevelValue;  //当前级别
+extern void CPrintfSendCallback(char *log);
 #endif
 
 #define CPrintf(...)  \

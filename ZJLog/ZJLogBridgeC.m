@@ -11,10 +11,5 @@
 
 void CPrintfSendCallback(char *log)
 {
-    [[ZJLog sharedTool] sendLogStr:[NSString stringWithUTF8String:log]];
-}
-
-extern void CPrintfShowCallback(char *log)
-{
-    [[ZJLog sharedTool] showLogStr:log];
+    [ZJLog log:[NSString stringWithUTF8String:log]];
 }

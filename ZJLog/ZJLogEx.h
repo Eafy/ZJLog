@@ -13,7 +13,6 @@
 #import "Singleton.h"
 
 extern void CPrintfSendCallback(char * _Nullable log);
-extern void CPrintfShowCallback(char *_Nullable log);
 extern int mCPrintfLevelValue;
 
 @interface ZJLog ()
@@ -22,8 +21,6 @@ singleton_h(Tool)
 @property (nonatomic,weak) id<ZJLogDelegate> _Nullable delegate;
 
 - (void)sendLogStr:(NSString *_Nullable)content;     //转化为NSString输出
-
-- (void)showLogStr:(const char *_Nullable)content;    //打印C字符串;
 
 /**
  关闭Log文件

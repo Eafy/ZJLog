@@ -30,7 +30,7 @@ typedef enum : NSUInteger {
 /**
  日志开关，DEBUG模式下默认开启
  */
-+ (void)setLogOFF;
++ (void)setEnable:(BOOL)enable;
 
 /**
  设置日志显示级别
@@ -52,7 +52,7 @@ typedef enum : NSUInteger {
 
  @param isSave YES:保存，默认NO
  */
-+ (void)saveLog:(BOOL)isSave;
++ (void)setSave:(BOOL)isSave;
 
 
 + (void)log:(NSString *_Nullable)log;

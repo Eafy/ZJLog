@@ -46,7 +46,7 @@ singleton_m(Write);
 {
     if (!_logFilePath) {
         NSString *documentsPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
-        NSString *logFilePath = [documentsPath stringByAppendingString:@"/ZJLog"];
+        NSString *logFilePath = [documentsPath stringByAppendingString:@"/ConcoxVideoPlayerLog"];
         if (![[NSFileManager defaultManager] fileExistsAtPath:logFilePath]) {
             [[NSFileManager defaultManager] createDirectoryAtPath:logFilePath withIntermediateDirectories:YES attributes:nil error:nil];
         }
@@ -123,7 +123,7 @@ singleton_m(Write);
 - (NSMutableArray *)uploadFileArray
 {
     if (!_uploadFileArray) {
-        _uploadFileArray = [NSMutableArray arrayWithArray:[self.uploadFileDic objectForKey:@"kZJLogFileList"]];
+        _uploadFileArray = [NSMutableArray arrayWithArray:[self.uploadFileDic objectForKey:@"kJimiSDKLogFileList"]];
     }
 
     return _uploadFileArray;
@@ -138,11 +138,11 @@ singleton_m(Write);
 {
     NSMutableDictionary *fileDic = nil;
     NSString *documentsPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
-    NSString *logFilePath = [documentsPath stringByAppendingString:@"/ZJLog/ZJLogUploadDic.DAT"];
+    NSString *logFilePath = [documentsPath stringByAppendingString:@"/ConcoxVideoPlayerLog/JimiSDKLogUploadDic.DAT"];
     if ([[NSFileManager defaultManager] fileExistsAtPath:logFilePath]) {
         NSData *data = [[NSMutableData alloc] initWithContentsOfFile:logFilePath];
         NSKeyedUnarchiver *unarchiver = [[NSKeyedUnarchiver alloc] initForReadingWithData:data];
-        fileDic = [NSMutableDictionary dictionaryWithDictionary:[unarchiver decodeObjectForKey:@"kZJLogUploadDic"]];
+        fileDic = [NSMutableDictionary dictionaryWithDictionary:[unarchiver decodeObjectForKey:@"kJimiSDKLogUploadDic"]];
         [unarchiver finishDecoding];
     }
     if (!fileDic) {
@@ -162,14 +162,14 @@ singleton_m(Write);
     if (fileDic) {
         NSMutableData *data = [[NSMutableData alloc] init];
         NSKeyedArchiver *archiver = [[NSKeyedArchiver alloc] initForWritingWithMutableData:data];
-        [archiver encodeObject:fileDic forKey:@"kZJLogUploadDic"];
+        [archiver encodeObject:fileDic forKey:@"kJimiSDKLogUploadDic"];
         [archiver finishEncoding];
 
         NSString *documentsPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
-        NSString *logFilePath = [documentsPath stringByAppendingString:@"/ZJLog/ZJLogUploadDic.DAT"];
+        NSString *logFilePath = [documentsPath stringByAppendingString:@"/ConcoxVideoPlayerLog/JimiSDKLogUploadDic.DAT"];
 
         BOOL success = [data writeToFile:logFilePath atomically:YES];
-        CLog(@"Write log data to file: %d", success);
+        CLog(@"Write JimiVideoPlayer SDK log data to file: %d", success);
     }
 }
 
@@ -180,12 +180,12 @@ singleton_m(Write);
  */
 - (void)updateCurrentLogFile:(NSString *)fileName
 {
-    NSString *preFileName = [self.uploadFileDic objectForKey:@"kZJLogCurrentFile"];
-    [self.uploadFileDic setObject:fileName forKey:@"kZJLogCurrentFile"];
+    NSString *preFileName = [self.uploadFileDic objectForKey:@"kJimiSDKLogCurrentFile"];
+    [self.uploadFileDic setObject:fileName forKey:@"kJimiSDKLogCurrentFile"];
     if (preFileName) {
-        NSMutableArray *fileArray = [NSMutableArray arrayWithArray:[self.uploadFileDic objectForKey:@"kZJLogFileList"]];
+        NSMutableArray *fileArray = [NSMutableArray arrayWithArray:[self.uploadFileDic objectForKey:@"kJimiSDKLogFileList"]];
         [fileArray addObject:preFileName];
-        [self.uploadFileDic setObject:fileArray forKey:@"kZJLogFileList"];
+        [self.uploadFileDic setObject:fileArray forKey:@"kJimiSDKLogFileList"];
     }
 }
 
