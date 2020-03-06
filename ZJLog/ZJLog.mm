@@ -10,11 +10,21 @@
 #import "ZJLogEx.h"
 #import "ZJLogWriteManager.h"
 
+void CPrintfSendCallback(char *log)
+{
+    [[ZJLog sharedTool] sendLogStr:[NSString stringWithFormat:@"%s", log]];
+}
+
+void CPrintfShowCallback(char *log)
+{
+    [[ZJLog sharedTool] showLogStr:log];
+}
+
 @interface ZJLog ()
 
-@property (nonatomic, assign) BOOL enable;          //日志开关
-@property (nonatomic, assign) BOOL saveEnable;      //日志保存开关
-@property (nonatomic, assign) ZJLOG_LEVEL level;    //日志显示级别
+@property (nonatomic,assign) BOOL logEnable;        //日志开关
+@property (nonatomic,assign) BOOL LogOutEnable;     //日志输出开关
+@property (nonatomic,assign) BOOL saveEnable;       //日志保存开关
 
 @end
 
@@ -23,23 +33,24 @@ singleton_m(Tool)
 
 - (void)initData
 {
-#ifdef DEBUG
-    self.enable = YES;
-#else
-    self.enable = NO;
-#endif
+    self.logEnable = YES;
+    self.LogOutEnable = NO;     //默认不向上输出
     self.saveEnable = NO;
-    self.level = ZJLOG_LEVEL_VERBOSE;
-    mCPrintfLevelValue = self.level;
+
+    if (mCPrintfLevelValue == ZJLOG_LEVEL_DEBUG) {   //DEBUG模式，其他默认设置debug级别关闭打印
+#ifndef DEBUG
+        mCPrintfLevelValue = -1;
+#endif
+    }
 }
 
 - (void)sendLogStr:(NSString *)content
 {
-    if (!self.enable) return;
-
-    if (self.delegate && [self.delegate respondsToSelector:@selector(didReceiveLogString:)]) {
-        [self.delegate didReceiveLogString:content];
-    } else {
+    if (self.logEnable && self.LogOutEnable && self.delegate) {
+        if (self.delegate && [self.delegate respondsToSelector:@selector(didReceiveLogString:)]) {
+            [self.delegate didReceiveLogString:content];
+        }
+    } else if (self.logEnable) {
 #ifdef DEBUG
         NSLog(@"%@", content);
 #endif
@@ -50,6 +61,15 @@ singleton_m(Tool)
     }
 }
 
+- (void)showLogStr:(const char *)content
+{
+#ifdef DEBUG
+    if (self.logEnable) {
+        printf("%s", content);
+    }
+#endif
+}
+
 #pragma mark - Class API
 
 + (void)setDelegate:(id)delegate
@@ -57,17 +77,21 @@ singleton_m(Tool)
     [ZJLog sharedTool].delegate = delegate;
 }
 
++ (void)setLogOFF
+{
+    [ZJLog sharedTool].logEnable = false;
+}
+
 + (void)setLevel:(ZJLOG_LEVEL)level
 {
     if (ZJLOG_LEVEL_VERBOSE <= level && level <= ZJLOG_LEVEL_ERROR) {
-        [ZJLog sharedTool].level = level;
-        mCPrintfLevelValue = level;
+        mCPrintfLevelValue = (int)level;
+        if (level == ZJLOG_LEVEL_DEBUG) {   //DEBUG模式，其他默认设置debug级别关闭打印
+#ifndef DEBUG
+            mCPrintfLevelValue = -1;
+#endif
+        }
     }
-}
-
-+ (void)setEnable:(BOOL)enable
-{
-    [ZJLog sharedTool].enable = enable;
 }
 
 + (void)log:(NSString *_Nullable)content
@@ -98,7 +122,7 @@ singleton_m(Tool)
     }
 }
 
-+ (void)setSave:(BOOL)isSave
++ (void)saveLog:(BOOL)isSave
 {
     [ZJLog sharedTool].saveEnable = isSave;
 }

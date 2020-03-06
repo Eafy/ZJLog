@@ -11,4 +11,6 @@
 
 extern void CPrintfSendCallback(char *log);
 
+extern void CPrintfShowCallback(char *log);
+
 #endif /* ZJLogBridgeC_h */
