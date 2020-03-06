@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "ZJLog"
-  s.version      = "1.0.5"
+  s.version      = "1.0.6"
   s.summary      = "Log redirection output tool for iOS."
   s.description  = <<-DESC
 	Log redirection output tool for iOS, you can set the Log level, redirect output to the proxy interface, save logs to the sandbox, and more.
