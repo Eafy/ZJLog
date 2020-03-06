@@ -11,8 +11,8 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/Eafy/ZJLog.git", :tag => "#{s.version}" }
   s.platform     = :ios, "8.0"
 
-  s.source_files = "ZJLog/ZJLog.h", "ZJLog/ZJLogBridgeOC.h"
-  s.public_header_files = "ZJLog/ZJLog.h", "ZJLog/ZJLogBridgeOC.h"
+  s.source_files = "ZJLog/ZJLog.h", "ZJLog/ZJLogBridgeOC.h", "ZJLog/ZJLogBridgeC.h"
+  s.public_header_files = "ZJLog/ZJLog.h", "ZJLog/ZJLogBridgeOC.h", "ZJLog/ZJLogBridgeC.h"
 
   s.subspec 'ZJLog' do |ss|
     ss.source_files = "ZJLog/{ZJ}*.{h,m,mm,c}", "ZJLog/Singleton.h"
