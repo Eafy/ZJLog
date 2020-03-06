@@ -15,11 +15,6 @@ void CPrintfSendCallback(char *log)
     [[ZJLog sharedTool] sendLogStr:[NSString stringWithFormat:@"%s", log]];
 }
 
-void CPrintfShowCallback(char *log)
-{
-    [[ZJLog sharedTool] showLogStr:log];
-}
-
 @interface ZJLog ()
 
 @property (nonatomic,assign) BOOL logEnable;        //日志开关
@@ -59,15 +54,6 @@ singleton_m(Tool)
     if (self.saveEnable) {
         [ZJLog writeLog:content];     //是否写入沙盒
     }
-}
-
-- (void)showLogStr:(const char *)content
-{
-#ifdef DEBUG
-    if (self.logEnable) {
-        printf("%s", content);
-    }
-#endif
 }
 
 #pragma mark - Class API
