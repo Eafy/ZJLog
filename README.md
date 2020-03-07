@@ -16,7 +16,7 @@ Log redirection output tool for iOS, support for c、c++、m、mm code files.</b
   | `ZJLOG_LEVEL_WARN` | 3 |  warn   |   
   | `ZJLOG_LEVEL_ERROR` | 4 |  error   |  
   
-# ZJLog API
+## ZJLog Setting API
 - `+setLogOFF`  
   Turn off log output, default on.
   
@@ -29,12 +29,12 @@ Log redirection output tool for iOS, support for c、c++、m、mm code files.</b
 - `+saveLog:`  
   Switch for save log to sandbox.
   
-# Use Print API
-## For OC
+## Use Print API
+### For OC
 `#import <ZJLog/ZJLog.h>`</br>
 `CLog(@"This is a log1");`</br>
 `CLog(@"This is a log2:%@", @"Hello World!");`
-## For C、C++
+### For C、C++
 `#include <ZJLog/ZJPrintfLog.h>`</br>
 `CPrintf("This is a log for debug")`</br>
 `CPrintfV("This is a log for verbose")`</br>
