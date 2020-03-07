@@ -1,9 +1,9 @@
 Pod::Spec.new do |s|
   s.name         = "ZJLog"
-  s.version      = "1.0.7"
-  s.summary      = "Log redirection output tool for iOS."
+  s.version      = "1.0.8"
+  s.summary      = "Log redirection output tool for iOS, support for c、c++、m、mm code files."
   s.description  = <<-DESC
-	Log redirection output tool for iOS, you can set the Log level, redirect output to the proxy interface, save logs to the sandbox, and more.
+	Log redirection output tool for iOS, you can set the Log level, redirect output to the proxy interface, save logs to the sandbox, support for c、c++、m、mm code files, and more.
                    DESC
   s.homepage     = "https://github.com/Eafy/ZJLog.git"
   s.license      = { :type => "MIT", :file => "LICENSE" }
@@ -13,6 +13,7 @@ Pod::Spec.new do |s|
 
   s.source_files = "ZJLog/ZJLog.h", "ZJLog/ZJLogBridgeOC.h", "ZJLog/ZJLogBridgeC.h", "ZJLog/ZJPrintfLog.h"
   s.public_header_files = "ZJLog/ZJLog.h", "ZJLog/ZJLogBridgeOC.h", "ZJLog/ZJLogBridgeC.h", "ZJLog/ZJPrintfLog.h"
+  s.libraries = "c++"
 
   s.subspec 'ZJLog' do |ss|
     ss.source_files = "ZJLog/{ZJ}*.{h,m,mm,c}", "ZJLog/Singleton.h"
