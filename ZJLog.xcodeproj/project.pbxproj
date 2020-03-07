@@ -49,6 +49,7 @@
 		0C85233D21E5EB8F000E122B /* ZJLogBridgeC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJLogBridgeC.h; sourceTree = "<group>"; };
 		0C85233E21E5EB8F000E122B /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
 		0CED8BDA2413434D00BD1D11 /* ZJPrintfLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJPrintfLog.h; sourceTree = "<group>"; };
+		0CED8BE724135FBD00BD1D11 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/libc++.tbd"; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +77,7 @@
 				0C85231E21E5EB24000E122B /* ZJLog */,
 				0C85232921E5EB24000E122B /* ZJLogTests */,
 				0C85231D21E5EB24000E122B /* Products */,
+				0CED8BE624135FBD00BD1D11 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -114,6 +116,14 @@
 				0C85232C21E5EB24000E122B /* Info.plist */,
 			);
 			path = ZJLogTests;
+			sourceTree = "<group>";
+		};
+		0CED8BE624135FBD00BD1D11 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0CED8BE724135FBD00BD1D11 /* libc++.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
