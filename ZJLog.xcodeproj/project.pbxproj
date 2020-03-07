@@ -19,6 +19,7 @@
 		0C85234521E5EB90000E122B /* ZJLogBridgeC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C85233C21E5EB8F000E122B /* ZJLogBridgeC.m */; };
 		0C85234621E5EB90000E122B /* ZJLogBridgeC.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C85233D21E5EB8F000E122B /* ZJLogBridgeC.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0C85234721E5EB90000E122B /* Singleton.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C85233E21E5EB8F000E122B /* Singleton.h */; };
+		0CED8BDB2413434D00BD1D11 /* ZJPrintfLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CED8BDA2413434D00BD1D11 /* ZJPrintfLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		0C85233C21E5EB8F000E122B /* ZJLogBridgeC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJLogBridgeC.m; sourceTree = "<group>"; };
 		0C85233D21E5EB8F000E122B /* ZJLogBridgeC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJLogBridgeC.h; sourceTree = "<group>"; };
 		0C85233E21E5EB8F000E122B /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
+		0CED8BDA2413434D00BD1D11 /* ZJPrintfLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJPrintfLog.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 				0C85233721E5EB8F000E122B /* ZJLogBridgeOC.c */,
 				0C85233821E5EB8F000E122B /* ZJLogWriteManager.h */,
 				0C85233921E5EB8F000E122B /* ZJLogWriteManager.m */,
+				0CED8BDA2413434D00BD1D11 /* ZJPrintfLog.h */,
 				0C85233E21E5EB8F000E122B /* Singleton.h */,
 				0C85232021E5EB24000E122B /* Info.plist */,
 			);
@@ -122,6 +125,7 @@
 			files = (
 				0C85234721E5EB90000E122B /* Singleton.h in Headers */,
 				0C85234321E5EB90000E122B /* ZJLogBridgeOC.h in Headers */,
+				0CED8BDB2413434D00BD1D11 /* ZJPrintfLog.h in Headers */,
 				0C85234621E5EB90000E122B /* ZJLogBridgeC.h in Headers */,
 				0C85232D21E5EB24000E122B /* ZJLog.h in Headers */,
 				0C85234421E5EB90000E122B /* ZJLogEx.h in Headers */,
@@ -388,7 +392,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = mh_dylib;
-				MARKETING_VERSION = 1.0.6;
+				MARKETING_VERSION = 1.0.7;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.eafy.ZJLog;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -418,7 +422,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = mh_dylib;
-				MARKETING_VERSION = 1.0.6;
+				MARKETING_VERSION = 1.0.7;
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.eafy.ZJLog;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
