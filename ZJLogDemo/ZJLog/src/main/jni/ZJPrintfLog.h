@@ -1,9 +1,8 @@
 //
 //  ZJPrintfLog.h
-//  IOTCamera
 //
 //  Created by lzj<lizhijian_21@163.com> on 2018/7/16.
-//  Copyright © 2018年 Jimi. All rights reserved.
+//  Copyright © 2018年 eafy. All rights reserved.
 //
 
 #ifndef ZJPrintfLog_h
@@ -24,7 +23,7 @@ extern void SetCPrintfLogLevel(int level);
 #if defined(__ANDROID__) || defined(ANDROID)    //Android
 
 #include <android/log.h>
-#include "ZJLogJni.h"
+#include "ZJLogBridgeJni.h"
 
 #elif defined(__APPLE__)  //iOS
 
