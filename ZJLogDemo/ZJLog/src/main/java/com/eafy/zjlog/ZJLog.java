@@ -33,14 +33,25 @@ public class ZJLog {
     private static int mFileSize = 10;          //日志文件最大存储的大小(以M为单位)
 
     /**
-     * 设置日志的tag标签，默认"ZJLog"
+     * 设置日志的tag标签
+     *
+     * @param tag 日志标签，默认"ZJLog"
      * */
     public static void setTAG(String tag) {
         mTAG = tag;
     }
 
     /**
+     * 获取日志的tag标签
+     *
+     * @return 日志标签
+     * */
+    public static String getTAG() { return mTAG; }
+
+    /**
      * 是否是DEBUG模式，在DEBUG模式下日志才会输出和保存
+     *
+     *  @param isDebug 是否启动
      * */
     public static void setIsDebug(boolean isDebug) {
         ZJLog.bIsDebug = isDebug;
@@ -48,6 +59,8 @@ public class ZJLog {
 
     /**
      * 是否保存日志
+     *
+     * @param need 是否保存
      * */
     public static void setSaveEnable(boolean need) {
         bIsSave = need;
@@ -56,15 +69,19 @@ public class ZJLog {
     /**
      * 设置IMEI，将会以文本名字_IMEI.log形式作为日志文件名
      * #需要在所有的日志打印前调用此接口，否则会产生默认文件
+     *
+     * @param name 文件名称
      * */
-    public static void setFileName(String imei) {
-        mFileName = imei;
+    public static void setFileName(String name) {
+        mFileName = name;
         bIsFirstRun = true;
     }
 
     /**
      * 设置日志文件夹路径(默认会创建文件夹)
      * #需要在所有的日志打印前调用此接口，否则会产生默认文件
+     *
+     * @param pathDic 日志文件上级文件夹路径
      * */
     public static void setSavePathDic(String pathDic) {
         mPathDic = pathDic;
@@ -72,11 +89,15 @@ public class ZJLog {
 
     /**
      * 设置日志存储的个数
+     *
+     * @param count 文件个数
      * */
     public static void setSaveFileCount(int count) { if (count > 0) mFileCount = count; }
 
     /**
      * 设置日志存储的单个文件大小，以兆为单位
+     *
+     * @param size 单个文件大小，以兆为单位
      * */
     public static void setSaveFileSize(int size) { if (size > 0) mFileSize = size; }
 

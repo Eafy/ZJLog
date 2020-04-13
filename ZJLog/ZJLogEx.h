@@ -22,8 +22,6 @@ singleton_h(Tool)
 
 - (void)sendLogStr:(NSString *_Nullable)content;     //转化为NSString输出
 
-- (void)showLogStr:(const char *_Nullable)content;    //打印C字符串;
-
 /**
  关闭Log文件
  */

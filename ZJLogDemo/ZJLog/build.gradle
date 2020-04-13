@@ -2,7 +2,7 @@ apply plugin: 'com.android.library'
 apply plugin: 'com.github.dcendents.android-maven'
 apply plugin: 'com.jfrog.bintray'
 
-def ZJLog_Version_Value = "1.0.1"
+def ZJLog_Version_Value = "1.0.2"
 
 android {
     compileSdkVersion 29
@@ -168,3 +168,23 @@ bintray {
         publish = true
     }
 }
+
+//********************************************
+//      本地编译发布
+//********************************************
+
+def sdkDestinationPath = "build"
+def zipFile = file('build/intermediates/packaged-classes/debug/classes.jar')
+
+task deleteBuild(type: Delete) {
+    delete sdkDestinationPath + libName + ".jar"
+}
+
+task makeJar(type: Jar) {
+    from zipTree(zipFile)
+    from fileTree(dir: 'src/main',includes: ['assets/**'])//将assets目录打入jar包
+    baseName = libName
+    destinationDir = file(sdkDestinationPath)
+}
+
+makeJar.dependsOn(deleteBuild, build)

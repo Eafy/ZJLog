@@ -16,7 +16,7 @@ template <typename FUN> void doInJavaThread(FUN &&fun) {
         JNIEnv *env = nullptr;
         int status = jmcpJVM->GetEnv((void **)&env, JNI_VERSION_1_4);
         if (status != JNI_OK) {
-            if (jmcpJVM->AttachCurrentThread(&env, NULL) != JNI_OK) {
+            if (jmcpJVM->AttachCurrentThread(&env, nullptr) != JNI_OK) {
                 return;
             }
         }

@@ -23,6 +23,10 @@ JNIEXPORT void JNICALL Java_com_eafy_zjlog_ZJLogJni_Init
 JNIEXPORT void JNICALL Java_com_eafy_zjlog_ZJLogJni_Release
   (JNIEnv *, jclass);
 
+
+JNIEXPORT void JNICALL Java_com_eafy_zjlog_ZJlogJni_PrintAndroid
+        (int prio, const char* tag, const char* fmt, ...);
+
 #ifdef __cplusplus
 }
 #endif
