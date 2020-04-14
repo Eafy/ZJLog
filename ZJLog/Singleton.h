@@ -1,9 +1,9 @@
 //
-//  Singleton.h
-//  ZJLog
+//  JMSingleton.h
+//  JMSmartUtils
 //
-//  Created by lzj<lizhijian_21@163.com> on 2019/1/8.
-//  Copyright © 2019 ZJ. All rights reserved.
+//  Created by lzj<lizhijian_21@163.com> on 2018/5/11.
+//  Copyright © 2018年 concox. All rights reserved.
 //
 //单例模式宏,头文件宏：singleton_h(name)，实现文件宏：singleton_m(name)。
 //比如单列类名为：shareAudioTool,头文件加入singleton_h(AudioTool)，实现文件：singleton_m(AudioTool);
@@ -14,8 +14,9 @@
  }
  */
 
-#ifndef Singleton_h
-#define Singleton_h
+#ifndef JMSingleton_h
+#define JMSingleton_h
+#import <objc/message.h>
 
 // ## : 连接字符串和参数
 #define singleton_h(name) + (instancetype _Nullable)shared##name;
@@ -26,6 +27,7 @@
 static id _instance; \
 + (instancetype)allocWithZone:(struct _NSZone *)zone \
 { \
+if (_instance) return _instance; \
 static dispatch_once_t onceToken; \
 dispatch_once(&onceToken, ^{ \
 _instance = [super allocWithZone:zone]; \
@@ -34,6 +36,7 @@ return _instance; \
 } \
 + (instancetype)shared##name \
 { \
+if (_instance) return _instance; \
 static dispatch_once_t onceToken; \
 dispatch_once(&onceToken, ^{ \
 _instance = [[self alloc] init]; \
@@ -50,11 +53,13 @@ return _instance; \
 } \
 - (instancetype)init \
 { \
+if (_instance) return _instance; \
 static dispatch_once_t onceToken; \
 dispatch_once(&onceToken, ^{ \
 _instance = [super init]; \
-if ([self respondsToSelector:@selector(initData)]) { \
-[self initData]; \
+SEL initDataSel = NSSelectorFromString(@"initData"); \
+if ([self respondsToSelector:initDataSel]) { \
+    ((void (*) (id, SEL)) objc_msgSend)(self, initDataSel); \
 } \
 }); \
 return _instance; \
@@ -66,6 +71,7 @@ return _instance; \
 static id _instance; \
 + (id)allocWithZone:(struct _NSZone *)zone \
 { \
+if (_instance) return _instance; \
 static dispatch_once_t onceToken; \
 dispatch_once(&onceToken, ^{ \
 _instance = [super allocWithZone:zone]; \
@@ -74,6 +80,7 @@ return _instance; \
 } \
 + (instancetype)shared##name \
 { \
+if (_instance) return _instance; \
 static dispatch_once_t onceToken; \
 dispatch_once(&onceToken, ^{ \
 _instance = [[self alloc] init]; \
@@ -103,4 +110,4 @@ return _instance; \
 
 #endif
 
-#endif /* Singleton_h */
+#endif /* JMSingleton_h */
