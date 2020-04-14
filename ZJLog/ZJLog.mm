@@ -18,7 +18,7 @@ void CPrintfSendCallback(char *log)
 @interface ZJLog ()
 
 @property (nonatomic,assign) BOOL logEnable;        //日志开关
-@property (nonatomic,assign) BOOL LogOutEnable;     //日志输出开关
+@property (nonatomic,assign) BOOL LogOutEnable;     //日志向上输出开关
 @property (nonatomic,assign) BOOL saveEnable;       //日志保存开关
 
 @end
@@ -29,7 +29,7 @@ singleton_m(Tool)
 - (void)initData
 {
     self.logEnable = YES;
-    self.LogOutEnable = NO;     //默认不向上输出
+    self.LogOutEnable = YES;     //默认向上输出
     self.saveEnable = NO;
 
     if (mCPrintfLevelValue == ZJLOG_LEVEL_DEBUG) {   //DEBUG模式，其他默认设置debug级别关闭打印
