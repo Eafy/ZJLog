@@ -1,6 +1,6 @@
 //
-//  JMLogTests.m
-//  JMLogTests
+//  ZJLogTests.m
+//  ZJLogTests
 //
 //  Created by lzj<lizhijian_21@163.com> on 2020/4/15.
 //  Copyright © 2020 Jimi. All rights reserved.
@@ -8,11 +8,11 @@
 
 #import <XCTest/XCTest.h>
 
-@interface JMLogTests : XCTestCase
+@interface ZJLogTests : XCTestCase
 
 @end
 
-@implementation JMLogTests
+@implementation ZJLogTests
 
 - (void)setUp {
     // Put setup code here. This method is called before the invocation of each test method in the class.

@@ -1,16 +1,16 @@
 //
-//  JMLogBridgeOC.h
-//  JMLog
+//  ZJLogBridgeOC.h
+//  ZJLog
 //
 //  Created by lzj<lizhijian_21@163.com> on 2019/1/8.
 //  Copyright © 2019 ZJ. All rights reserved.
 //
 
-#ifndef JMLogBridgeOC_h
-#define JMLogBridgeOC_h
+#ifndef ZJLogBridgeOC_h
+#define ZJLogBridgeOC_h
 
 #include <stdio.h>
-#include "JMLogBridgeC.h"
+#include "ZJLogBridgeC.h"
 
 #ifndef CPrintfLevel
 #define CPrintf_VERBOSE 0       //任意信息都打印(默认级别)
@@ -76,4 +76,4 @@ extern int mCPrintfLevelValue;  //当前级别
 
 #define CPrintfLine printf("%s---->%d\n", __func__, __LINE__);
 
-#endif /* JMLogBridgeOC_h */
+#endif /* ZJLogBridgeOC_h */

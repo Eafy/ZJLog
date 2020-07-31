@@ -1,24 +1,24 @@
 //
-//  JMLogEx.h
-//  JMLog
+//  ZJLogEx.h
+//  ZJLog
 //
 //  Created by lzj<lizhijian_21@163.com> on 2019/1/8.
 //  Copyright © 2019 ZJ. All rights reserved.
 //
 
-#ifndef JMLogEx_h
-#define JMLogEx_h
+#ifndef ZJLogEx_h
+#define ZJLogEx_h
 
-#import "JMLog.h"
+#import "ZJLog.h"
 #import "Singleton.h"
 
 extern void CPrintfSendCallback(char * _Nullable log);
 extern int mCPrintfLevelValue;
 
-@interface JMLog ()
+@interface ZJLog ()
 singleton_h(Tool)
 
-@property (nonatomic,weak) id<JMLogDelegate> _Nullable delegate;
+@property (nonatomic,weak) id<ZJLogDelegate> _Nullable delegate;
 
 - (void)sendLogStr:(NSString *_Nullable)content;     //转化为NSString输出
 
@@ -44,6 +44,6 @@ singleton_h(Tool)
 
 @end
 
-#endif /* JMLogEx_h */
+#endif /* ZJLogEx_h */
 
 

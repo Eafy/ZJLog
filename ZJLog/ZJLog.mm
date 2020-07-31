@@ -1,21 +1,21 @@
 //
-//  JMLog.m
-//  JMLog
+//  ZJLog.m
+//  ZJLog
 //
 //  Created by lzj<lizhijian_21@163.com> on 2019/1/2.
 //  Copyright © 2019 ZJ. All rights reserved.
 //
 
-#import "JMLog.h"
-#import "JMLogEx.h"
-#import "JMLogWriteManager.h"
+#import "ZJLog.h"
+#import "ZJLogEx.h"
+#import "ZJLogWriteManager.h"
 
 void CPrintfSendCallback(char *log)
 {
-    [[JMLog sharedTool] sendLogStr:[NSString stringWithFormat:@"%s", log]];
+    [[ZJLog sharedTool] sendLogStr:[NSString stringWithFormat:@"%s", log]];
 }
 
-@interface JMLog ()
+@interface ZJLog ()
 
 @property (nonatomic,assign) BOOL logEnable;        //日志开关
 @property (nonatomic,assign) BOOL LogOutEnable;     //日志向上输出开关
@@ -23,7 +23,7 @@ void CPrintfSendCallback(char *log)
 
 @end
 
-@implementation JMLog
+@implementation ZJLog
 singleton_m(Tool)
 
 - (void)initData
@@ -32,7 +32,7 @@ singleton_m(Tool)
     self.LogOutEnable = YES;     //默认向上输出
     self.saveEnable = NO;
 
-    if (mCPrintfLevelValue == JMLog_LEVEL_DEBUG) {   //DEBUG模式，其他默认设置debug级别关闭打印
+    if (mCPrintfLevelValue == ZJLog_LEVEL_DEBUG) {   //DEBUG模式，其他默认设置debug级别关闭打印
 #ifndef DEBUG
         mCPrintfLevelValue = -1;
 #endif
@@ -52,7 +52,7 @@ singleton_m(Tool)
     }
 
     if (self.saveEnable) {
-        [JMLog writeLog:content];     //是否写入沙盒
+        [ZJLog writeLog:content];     //是否写入沙盒
     }
 }
 
@@ -60,19 +60,19 @@ singleton_m(Tool)
 
 + (void)setDelegate:(id)delegate
 {
-    [JMLog sharedTool].delegate = delegate;
+    [ZJLog sharedTool].delegate = delegate;
 }
 
 + (void)setLogOFF
 {
-    [JMLog sharedTool].logEnable = false;
+    [ZJLog sharedTool].logEnable = false;
 }
 
-+ (void)setLevel:(JMLog_LEVEL)level
++ (void)setLevel:(ZJLog_LEVEL)level
 {
-    if (JMLog_LEVEL_VERBOSE <= level && level <= JMLog_LEVEL_ERROR) {
+    if (ZJLog_LEVEL_VERBOSE <= level && level <= ZJLog_LEVEL_ERROR) {
         mCPrintfLevelValue = (int)level;
-        if (level == JMLog_LEVEL_DEBUG) {   //DEBUG模式，其他默认设置debug级别关闭打印
+        if (level == ZJLog_LEVEL_DEBUG) {   //DEBUG模式，其他默认设置debug级别关闭打印
 #ifndef DEBUG
             mCPrintfLevelValue = -1;
 #endif
@@ -82,35 +82,35 @@ singleton_m(Tool)
 
 + (void)log:(NSString *_Nullable)content
 {
-    [[JMLog sharedTool] sendLogStr:content];
+    [[ZJLog sharedTool] sendLogStr:content];
 }
 
 #pragma mark - WriteLog
 
 + (void)writeClose
 {
-    if ([JMLog sharedTool].saveEnable) {
-        [[JMLogWriteManager sharedWrite] close];
+    if ([ZJLog sharedTool].saveEnable) {
+        [[ZJLogWriteManager sharedWrite] close];
     }
 }
 
 + (void)writeLog:(NSString *)content
 {
-    if ([JMLog sharedTool].saveEnable) {
-        [[JMLogWriteManager sharedWrite] writeLog:content];
+    if ([ZJLog sharedTool].saveEnable) {
+        [[ZJLogWriteManager sharedWrite] writeLog:content];
     }
 }
 
 + (void)writeWrap
 {
-    if ([JMLog sharedTool].saveEnable) {
-        [[JMLogWriteManager sharedWrite] writeWrap];
+    if ([ZJLog sharedTool].saveEnable) {
+        [[ZJLogWriteManager sharedWrite] writeWrap];
     }
 }
 
 + (void)saveLog:(BOOL)isSave
 {
-    [JMLog sharedTool].saveEnable = isSave;
+    [ZJLog sharedTool].saveEnable = isSave;
 }
 
 

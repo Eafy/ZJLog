@@ -1,6 +1,6 @@
 //
-//  JMLogWriteManager.h
-//  JMLog
+//  ZJLogWriteManager.h
+//  ZJLog
 //
 //  Created by lzj<lizhijian_21@163.com> on 2019/1/8.
 //  Copyright © 2019 ZJ. All rights reserved.
@@ -11,7 +11,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface JMLogWriteManager : NSObject
+@interface ZJLogWriteManager : NSObject
 singleton_h(Write);
 
 - (void)close;

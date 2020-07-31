@@ -7,19 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0C15FF9A2446DD3B002B6507 /* JMLog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C15FF902446DD3B002B6507 /* JMLog.framework */; };
-		0C15FF9F2446DD3B002B6507 /* JMLogTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C15FF9E2446DD3B002B6507 /* JMLogTests.m */; };
-		0C15FFA12446DD3B002B6507 /* JMLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C15FF932446DD3B002B6507 /* JMLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0C15FFB42446DD69002B6507 /* JMLogBridgeC.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C15FFAA2446DD69002B6507 /* JMLogBridgeC.h */; };
-		0C15FFB52446DD69002B6507 /* JMLogWriteManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C15FFAB2446DD69002B6507 /* JMLogWriteManager.h */; };
-		0C15FFB62446DD69002B6507 /* JMLogBridgeOC.c in Sources */ = {isa = PBXBuildFile; fileRef = 0C15FFAC2446DD69002B6507 /* JMLogBridgeOC.c */; };
-		0C15FFB72446DD69002B6507 /* JMPrintfLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C15FFAD2446DD69002B6507 /* JMPrintfLog.h */; };
-		0C15FFB82446DD69002B6507 /* JMLogEx.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C15FFAE2446DD69002B6507 /* JMLogEx.h */; };
-		0C15FFB92446DD69002B6507 /* JMLogWriteManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C15FFAF2446DD69002B6507 /* JMLogWriteManager.m */; };
+		0C15FF9A2446DD3B002B6507 /* ZJLog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C15FF902446DD3B002B6507 /* ZJLog.framework */; };
+		0C15FF9F2446DD3B002B6507 /* ZJLogTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C15FF9E2446DD3B002B6507 /* ZJLogTests.m */; };
+		0C15FFA12446DD3B002B6507 /* ZJLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C15FF932446DD3B002B6507 /* ZJLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0C15FFB42446DD69002B6507 /* ZJLogBridgeC.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C15FFAA2446DD69002B6507 /* ZJLogBridgeC.h */; };
+		0C15FFB52446DD69002B6507 /* ZJLogWriteManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C15FFAB2446DD69002B6507 /* ZJLogWriteManager.h */; };
+		0C15FFB62446DD69002B6507 /* ZJLogBridgeOC.c in Sources */ = {isa = PBXBuildFile; fileRef = 0C15FFAC2446DD69002B6507 /* ZJLogBridgeOC.c */; };
+		0C15FFB72446DD69002B6507 /* ZJPrintfLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C15FFAD2446DD69002B6507 /* ZJPrintfLog.h */; };
+		0C15FFB82446DD69002B6507 /* ZJLogEx.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C15FFAE2446DD69002B6507 /* ZJLogEx.h */; };
+		0C15FFB92446DD69002B6507 /* ZJLogWriteManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C15FFAF2446DD69002B6507 /* ZJLogWriteManager.m */; };
 		0C15FFBA2446DD69002B6507 /* Singleton.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C15FFB02446DD69002B6507 /* Singleton.h */; };
-		0C15FFBB2446DD69002B6507 /* JMLog.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0C15FFB12446DD69002B6507 /* JMLog.mm */; };
-		0C15FFBC2446DD69002B6507 /* JMLogBridgeOC.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C15FFB22446DD69002B6507 /* JMLogBridgeOC.h */; };
-		0C15FFBD2446DD69002B6507 /* JMLogBridgeC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C15FFB32446DD69002B6507 /* JMLogBridgeC.m */; };
+		0C15FFBB2446DD69002B6507 /* ZJLog.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0C15FFB12446DD69002B6507 /* ZJLog.mm */; };
+		0C15FFBC2446DD69002B6507 /* ZJLogBridgeOC.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C15FFB22446DD69002B6507 /* ZJLogBridgeOC.h */; };
+		0C15FFBD2446DD69002B6507 /* ZJLogBridgeC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C15FFB32446DD69002B6507 /* ZJLogBridgeC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,22 +33,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0C15FF902446DD3B002B6507 /* JMLog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JMLog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0C15FF932446DD3B002B6507 /* JMLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JMLog.h; sourceTree = "<group>"; };
+		0C15FF902446DD3B002B6507 /* ZJLog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZJLog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C15FF932446DD3B002B6507 /* ZJLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZJLog.h; sourceTree = "<group>"; };
 		0C15FF942446DD3B002B6507 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0C15FF992446DD3B002B6507 /* JMLogTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JMLogTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0C15FF9E2446DD3B002B6507 /* JMLogTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JMLogTests.m; sourceTree = "<group>"; };
+		0C15FF992446DD3B002B6507 /* ZJLogTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZJLogTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C15FF9E2446DD3B002B6507 /* ZJLogTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJLogTests.m; sourceTree = "<group>"; };
 		0C15FFA02446DD3B002B6507 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0C15FFAA2446DD69002B6507 /* JMLogBridgeC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMLogBridgeC.h; sourceTree = "<group>"; };
-		0C15FFAB2446DD69002B6507 /* JMLogWriteManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMLogWriteManager.h; sourceTree = "<group>"; };
-		0C15FFAC2446DD69002B6507 /* JMLogBridgeOC.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = JMLogBridgeOC.c; sourceTree = "<group>"; };
-		0C15FFAD2446DD69002B6507 /* JMPrintfLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMPrintfLog.h; sourceTree = "<group>"; };
-		0C15FFAE2446DD69002B6507 /* JMLogEx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMLogEx.h; sourceTree = "<group>"; };
-		0C15FFAF2446DD69002B6507 /* JMLogWriteManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMLogWriteManager.m; sourceTree = "<group>"; };
+		0C15FFAA2446DD69002B6507 /* ZJLogBridgeC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJLogBridgeC.h; sourceTree = "<group>"; };
+		0C15FFAB2446DD69002B6507 /* ZJLogWriteManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJLogWriteManager.h; sourceTree = "<group>"; };
+		0C15FFAC2446DD69002B6507 /* ZJLogBridgeOC.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ZJLogBridgeOC.c; sourceTree = "<group>"; };
+		0C15FFAD2446DD69002B6507 /* ZJPrintfLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJPrintfLog.h; sourceTree = "<group>"; };
+		0C15FFAE2446DD69002B6507 /* ZJLogEx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJLogEx.h; sourceTree = "<group>"; };
+		0C15FFAF2446DD69002B6507 /* ZJLogWriteManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJLogWriteManager.m; sourceTree = "<group>"; };
 		0C15FFB02446DD69002B6507 /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
-		0C15FFB12446DD69002B6507 /* JMLog.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = JMLog.mm; sourceTree = "<group>"; };
-		0C15FFB22446DD69002B6507 /* JMLogBridgeOC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMLogBridgeOC.h; sourceTree = "<group>"; };
-		0C15FFB32446DD69002B6507 /* JMLogBridgeC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMLogBridgeC.m; sourceTree = "<group>"; };
+		0C15FFB12446DD69002B6507 /* ZJLog.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ZJLog.mm; sourceTree = "<group>"; };
+		0C15FFB22446DD69002B6507 /* ZJLogBridgeOC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJLogBridgeOC.h; sourceTree = "<group>"; };
+		0C15FFB32446DD69002B6507 /* ZJLogBridgeC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJLogBridgeC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C15FF9A2446DD3B002B6507 /* JMLog.framework in Frameworks */,
+				0C15FF9A2446DD3B002B6507 /* ZJLog.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,8 +73,8 @@
 		0C15FF862446DD3B002B6507 = {
 			isa = PBXGroup;
 			children = (
-				0C15FF922446DD3B002B6507 /* JMLog */,
-				0C15FF9D2446DD3B002B6507 /* JMLogTests */,
+				0C15FF922446DD3B002B6507 /* ZJLog */,
+				0C15FF9D2446DD3B002B6507 /* ZJLogTests */,
 				0C15FF912446DD3B002B6507 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -82,38 +82,38 @@
 		0C15FF912446DD3B002B6507 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0C15FF902446DD3B002B6507 /* JMLog.framework */,
-				0C15FF992446DD3B002B6507 /* JMLogTests.xctest */,
+				0C15FF902446DD3B002B6507 /* ZJLog.framework */,
+				0C15FF992446DD3B002B6507 /* ZJLogTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0C15FF922446DD3B002B6507 /* JMLog */ = {
+		0C15FF922446DD3B002B6507 /* ZJLog */ = {
 			isa = PBXGroup;
 			children = (
-				0C15FF932446DD3B002B6507 /* JMLog.h */,
-				0C15FFB12446DD69002B6507 /* JMLog.mm */,
-				0C15FFAA2446DD69002B6507 /* JMLogBridgeC.h */,
-				0C15FFB32446DD69002B6507 /* JMLogBridgeC.m */,
-				0C15FFAC2446DD69002B6507 /* JMLogBridgeOC.c */,
-				0C15FFB22446DD69002B6507 /* JMLogBridgeOC.h */,
-				0C15FFAE2446DD69002B6507 /* JMLogEx.h */,
-				0C15FFAB2446DD69002B6507 /* JMLogWriteManager.h */,
-				0C15FFAF2446DD69002B6507 /* JMLogWriteManager.m */,
-				0C15FFAD2446DD69002B6507 /* JMPrintfLog.h */,
+				0C15FF932446DD3B002B6507 /* ZJLog.h */,
+				0C15FFB12446DD69002B6507 /* ZJLog.mm */,
+				0C15FFAA2446DD69002B6507 /* ZJLogBridgeC.h */,
+				0C15FFB32446DD69002B6507 /* ZJLogBridgeC.m */,
+				0C15FFAC2446DD69002B6507 /* ZJLogBridgeOC.c */,
+				0C15FFB22446DD69002B6507 /* ZJLogBridgeOC.h */,
+				0C15FFAE2446DD69002B6507 /* ZJLogEx.h */,
+				0C15FFAB2446DD69002B6507 /* ZJLogWriteManager.h */,
+				0C15FFAF2446DD69002B6507 /* ZJLogWriteManager.m */,
+				0C15FFAD2446DD69002B6507 /* ZJPrintfLog.h */,
 				0C15FFB02446DD69002B6507 /* Singleton.h */,
 				0C15FF942446DD3B002B6507 /* Info.plist */,
 			);
-			path = JMLog;
+			path = ZJLog;
 			sourceTree = "<group>";
 		};
-		0C15FF9D2446DD3B002B6507 /* JMLogTests */ = {
+		0C15FF9D2446DD3B002B6507 /* ZJLogTests */ = {
 			isa = PBXGroup;
 			children = (
-				0C15FF9E2446DD3B002B6507 /* JMLogTests.m */,
+				0C15FF9E2446DD3B002B6507 /* ZJLogTests.m */,
 				0C15FFA02446DD3B002B6507 /* Info.plist */,
 			);
-			path = JMLogTests;
+			path = ZJLogTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,21 +124,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C15FFBA2446DD69002B6507 /* Singleton.h in Headers */,
-				0C15FFA12446DD3B002B6507 /* JMLog.h in Headers */,
-				0C15FFB42446DD69002B6507 /* JMLogBridgeC.h in Headers */,
-				0C15FFB82446DD69002B6507 /* JMLogEx.h in Headers */,
-				0C15FFB52446DD69002B6507 /* JMLogWriteManager.h in Headers */,
-				0C15FFBC2446DD69002B6507 /* JMLogBridgeOC.h in Headers */,
-				0C15FFB72446DD69002B6507 /* JMPrintfLog.h in Headers */,
+				0C15FFA12446DD3B002B6507 /* ZJLog.h in Headers */,
+				0C15FFB42446DD69002B6507 /* ZJLogBridgeC.h in Headers */,
+				0C15FFB82446DD69002B6507 /* ZJLogEx.h in Headers */,
+				0C15FFB52446DD69002B6507 /* ZJLogWriteManager.h in Headers */,
+				0C15FFBC2446DD69002B6507 /* ZJLogBridgeOC.h in Headers */,
+				0C15FFB72446DD69002B6507 /* ZJPrintfLog.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		0C15FF8F2446DD3B002B6507 /* JMLog */ = {
+		0C15FF8F2446DD3B002B6507 /* ZJLog */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0C15FFA42446DD3B002B6507 /* Build configuration list for PBXNativeTarget "JMLog" */;
+			buildConfigurationList = 0C15FFA42446DD3B002B6507 /* Build configuration list for PBXNativeTarget "ZJLog" */;
 			buildPhases = (
 				0C15FF8B2446DD3B002B6507 /* Headers */,
 				0C15FF8C2446DD3B002B6507 /* Sources */,
@@ -149,14 +149,14 @@
 			);
 			dependencies = (
 			);
-			name = JMLog;
+			name = ZJLog;
 			productName = JMLog;
-			productReference = 0C15FF902446DD3B002B6507 /* JMLog.framework */;
+			productReference = 0C15FF902446DD3B002B6507 /* ZJLog.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		0C15FF982446DD3B002B6507 /* JMLogTests */ = {
+		0C15FF982446DD3B002B6507 /* ZJLogTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0C15FFA72446DD3B002B6507 /* Build configuration list for PBXNativeTarget "JMLogTests" */;
+			buildConfigurationList = 0C15FFA72446DD3B002B6507 /* Build configuration list for PBXNativeTarget "ZJLogTests" */;
 			buildPhases = (
 				0C15FF952446DD3B002B6507 /* Sources */,
 				0C15FF962446DD3B002B6507 /* Frameworks */,
@@ -167,9 +167,9 @@
 			dependencies = (
 				0C15FF9C2446DD3B002B6507 /* PBXTargetDependency */,
 			);
-			name = JMLogTests;
+			name = ZJLogTests;
 			productName = JMLogTests;
-			productReference = 0C15FF992446DD3B002B6507 /* JMLogTests.xctest */;
+			productReference = 0C15FF992446DD3B002B6507 /* ZJLogTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -189,7 +189,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 0C15FF8A2446DD3B002B6507 /* Build configuration list for PBXProject "JMLog" */;
+			buildConfigurationList = 0C15FF8A2446DD3B002B6507 /* Build configuration list for PBXProject "ZJLog" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -202,8 +202,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0C15FF8F2446DD3B002B6507 /* JMLog */,
-				0C15FF982446DD3B002B6507 /* JMLogTests */,
+				0C15FF8F2446DD3B002B6507 /* ZJLog */,
+				0C15FF982446DD3B002B6507 /* ZJLogTests */,
 			);
 		};
 /* End PBXProject section */
@@ -230,10 +230,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C15FFB62446DD69002B6507 /* JMLogBridgeOC.c in Sources */,
-				0C15FFB92446DD69002B6507 /* JMLogWriteManager.m in Sources */,
-				0C15FFBD2446DD69002B6507 /* JMLogBridgeC.m in Sources */,
-				0C15FFBB2446DD69002B6507 /* JMLog.mm in Sources */,
+				0C15FFB62446DD69002B6507 /* ZJLogBridgeOC.c in Sources */,
+				0C15FFB92446DD69002B6507 /* ZJLogWriteManager.m in Sources */,
+				0C15FFBD2446DD69002B6507 /* ZJLogBridgeC.m in Sources */,
+				0C15FFBB2446DD69002B6507 /* ZJLog.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,7 +241,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C15FF9F2446DD3B002B6507 /* JMLogTests.m in Sources */,
+				0C15FF9F2446DD3B002B6507 /* ZJLogTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,7 +250,7 @@
 /* Begin PBXTargetDependency section */
 		0C15FF9C2446DD3B002B6507 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 0C15FF8F2446DD3B002B6507 /* JMLog */;
+			target = 0C15FF8F2446DD3B002B6507 /* ZJLog */;
 			targetProxy = 0C15FF9B2446DD3B002B6507 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -381,7 +381,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = JMLog/Info.plist;
+				INFOPLIST_FILE = ZJLog/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -389,8 +389,8 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.3;
-				PRODUCT_BUNDLE_IDENTIFIER = com.jimi.JMLog;
+				MARKETING_VERSION = 1.1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jimi.ZJLog;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
@@ -407,7 +407,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = JMLog/Info.plist;
+				INFOPLIST_FILE = ZJLog/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -415,8 +415,8 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.3;
-				PRODUCT_BUNDLE_IDENTIFIER = com.jimi.JMLog;
+				MARKETING_VERSION = 1.1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jimi.ZJLog;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
@@ -461,7 +461,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0C15FF8A2446DD3B002B6507 /* Build configuration list for PBXProject "JMLog" */ = {
+		0C15FF8A2446DD3B002B6507 /* Build configuration list for PBXProject "ZJLog" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0C15FFA22446DD3B002B6507 /* Debug */,
@@ -470,7 +470,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0C15FFA42446DD3B002B6507 /* Build configuration list for PBXNativeTarget "JMLog" */ = {
+		0C15FFA42446DD3B002B6507 /* Build configuration list for PBXNativeTarget "ZJLog" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0C15FFA52446DD3B002B6507 /* Debug */,
@@ -479,7 +479,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0C15FFA72446DD3B002B6507 /* Build configuration list for PBXNativeTarget "JMLogTests" */ = {
+		0C15FFA72446DD3B002B6507 /* Build configuration list for PBXNativeTarget "ZJLogTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0C15FFA82446DD3B002B6507 /* Debug */,

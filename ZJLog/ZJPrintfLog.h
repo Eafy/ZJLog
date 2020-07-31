@@ -24,11 +24,11 @@ extern void SetCPrintfLogLevel(int level);
 #if defined(__ANDROID__) || defined(ANDROID)    //Android
 
 #include <android/log.h>
-#include "JMLogJni.h"
+#include "ZJLogJni.h"
 
 #elif defined(__APPLE__)  //iOS
 
-#include "JMLogBridgeOC.h"
+#include "ZJLogBridgeOC.h"
 
 #else
 
