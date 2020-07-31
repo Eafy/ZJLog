@@ -1,0 +1,494 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C15FF9A2446DD3B002B6507 /* JMLog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C15FF902446DD3B002B6507 /* JMLog.framework */; };
+		0C15FF9F2446DD3B002B6507 /* JMLogTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C15FF9E2446DD3B002B6507 /* JMLogTests.m */; };
+		0C15FFA12446DD3B002B6507 /* JMLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C15FF932446DD3B002B6507 /* JMLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0C15FFB42446DD69002B6507 /* JMLogBridgeC.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C15FFAA2446DD69002B6507 /* JMLogBridgeC.h */; };
+		0C15FFB52446DD69002B6507 /* JMLogWriteManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C15FFAB2446DD69002B6507 /* JMLogWriteManager.h */; };
+		0C15FFB62446DD69002B6507 /* JMLogBridgeOC.c in Sources */ = {isa = PBXBuildFile; fileRef = 0C15FFAC2446DD69002B6507 /* JMLogBridgeOC.c */; };
+		0C15FFB72446DD69002B6507 /* JMPrintfLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C15FFAD2446DD69002B6507 /* JMPrintfLog.h */; };
+		0C15FFB82446DD69002B6507 /* JMLogEx.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C15FFAE2446DD69002B6507 /* JMLogEx.h */; };
+		0C15FFB92446DD69002B6507 /* JMLogWriteManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C15FFAF2446DD69002B6507 /* JMLogWriteManager.m */; };
+		0C15FFBA2446DD69002B6507 /* Singleton.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C15FFB02446DD69002B6507 /* Singleton.h */; };
+		0C15FFBB2446DD69002B6507 /* JMLog.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0C15FFB12446DD69002B6507 /* JMLog.mm */; };
+		0C15FFBC2446DD69002B6507 /* JMLogBridgeOC.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C15FFB22446DD69002B6507 /* JMLogBridgeOC.h */; };
+		0C15FFBD2446DD69002B6507 /* JMLogBridgeC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C15FFB32446DD69002B6507 /* JMLogBridgeC.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0C15FF9B2446DD3B002B6507 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C15FF872446DD3B002B6507 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0C15FF8F2446DD3B002B6507;
+			remoteInfo = JMLog;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0C15FF902446DD3B002B6507 /* JMLog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JMLog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C15FF932446DD3B002B6507 /* JMLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JMLog.h; sourceTree = "<group>"; };
+		0C15FF942446DD3B002B6507 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C15FF992446DD3B002B6507 /* JMLogTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JMLogTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C15FF9E2446DD3B002B6507 /* JMLogTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JMLogTests.m; sourceTree = "<group>"; };
+		0C15FFA02446DD3B002B6507 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C15FFAA2446DD69002B6507 /* JMLogBridgeC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMLogBridgeC.h; sourceTree = "<group>"; };
+		0C15FFAB2446DD69002B6507 /* JMLogWriteManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMLogWriteManager.h; sourceTree = "<group>"; };
+		0C15FFAC2446DD69002B6507 /* JMLogBridgeOC.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = JMLogBridgeOC.c; sourceTree = "<group>"; };
+		0C15FFAD2446DD69002B6507 /* JMPrintfLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMPrintfLog.h; sourceTree = "<group>"; };
+		0C15FFAE2446DD69002B6507 /* JMLogEx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMLogEx.h; sourceTree = "<group>"; };
+		0C15FFAF2446DD69002B6507 /* JMLogWriteManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMLogWriteManager.m; sourceTree = "<group>"; };
+		0C15FFB02446DD69002B6507 /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
+		0C15FFB12446DD69002B6507 /* JMLog.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = JMLog.mm; sourceTree = "<group>"; };
+		0C15FFB22446DD69002B6507 /* JMLogBridgeOC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMLogBridgeOC.h; sourceTree = "<group>"; };
+		0C15FFB32446DD69002B6507 /* JMLogBridgeC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMLogBridgeC.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0C15FF8D2446DD3B002B6507 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C15FF962446DD3B002B6507 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C15FF9A2446DD3B002B6507 /* JMLog.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0C15FF862446DD3B002B6507 = {
+			isa = PBXGroup;
+			children = (
+				0C15FF922446DD3B002B6507 /* JMLog */,
+				0C15FF9D2446DD3B002B6507 /* JMLogTests */,
+				0C15FF912446DD3B002B6507 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0C15FF912446DD3B002B6507 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0C15FF902446DD3B002B6507 /* JMLog.framework */,
+				0C15FF992446DD3B002B6507 /* JMLogTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0C15FF922446DD3B002B6507 /* JMLog */ = {
+			isa = PBXGroup;
+			children = (
+				0C15FF932446DD3B002B6507 /* JMLog.h */,
+				0C15FFB12446DD69002B6507 /* JMLog.mm */,
+				0C15FFAA2446DD69002B6507 /* JMLogBridgeC.h */,
+				0C15FFB32446DD69002B6507 /* JMLogBridgeC.m */,
+				0C15FFAC2446DD69002B6507 /* JMLogBridgeOC.c */,
+				0C15FFB22446DD69002B6507 /* JMLogBridgeOC.h */,
+				0C15FFAE2446DD69002B6507 /* JMLogEx.h */,
+				0C15FFAB2446DD69002B6507 /* JMLogWriteManager.h */,
+				0C15FFAF2446DD69002B6507 /* JMLogWriteManager.m */,
+				0C15FFAD2446DD69002B6507 /* JMPrintfLog.h */,
+				0C15FFB02446DD69002B6507 /* Singleton.h */,
+				0C15FF942446DD3B002B6507 /* Info.plist */,
+			);
+			path = JMLog;
+			sourceTree = "<group>";
+		};
+		0C15FF9D2446DD3B002B6507 /* JMLogTests */ = {
+			isa = PBXGroup;
+			children = (
+				0C15FF9E2446DD3B002B6507 /* JMLogTests.m */,
+				0C15FFA02446DD3B002B6507 /* Info.plist */,
+			);
+			path = JMLogTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0C15FF8B2446DD3B002B6507 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C15FFBA2446DD69002B6507 /* Singleton.h in Headers */,
+				0C15FFA12446DD3B002B6507 /* JMLog.h in Headers */,
+				0C15FFB42446DD69002B6507 /* JMLogBridgeC.h in Headers */,
+				0C15FFB82446DD69002B6507 /* JMLogEx.h in Headers */,
+				0C15FFB52446DD69002B6507 /* JMLogWriteManager.h in Headers */,
+				0C15FFBC2446DD69002B6507 /* JMLogBridgeOC.h in Headers */,
+				0C15FFB72446DD69002B6507 /* JMPrintfLog.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0C15FF8F2446DD3B002B6507 /* JMLog */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C15FFA42446DD3B002B6507 /* Build configuration list for PBXNativeTarget "JMLog" */;
+			buildPhases = (
+				0C15FF8B2446DD3B002B6507 /* Headers */,
+				0C15FF8C2446DD3B002B6507 /* Sources */,
+				0C15FF8D2446DD3B002B6507 /* Frameworks */,
+				0C15FF8E2446DD3B002B6507 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JMLog;
+			productName = JMLog;
+			productReference = 0C15FF902446DD3B002B6507 /* JMLog.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		0C15FF982446DD3B002B6507 /* JMLogTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C15FFA72446DD3B002B6507 /* Build configuration list for PBXNativeTarget "JMLogTests" */;
+			buildPhases = (
+				0C15FF952446DD3B002B6507 /* Sources */,
+				0C15FF962446DD3B002B6507 /* Frameworks */,
+				0C15FF972446DD3B002B6507 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0C15FF9C2446DD3B002B6507 /* PBXTargetDependency */,
+			);
+			name = JMLogTests;
+			productName = JMLogTests;
+			productReference = 0C15FF992446DD3B002B6507 /* JMLogTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0C15FF872446DD3B002B6507 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = Jimi;
+				TargetAttributes = {
+					0C15FF8F2446DD3B002B6507 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					0C15FF982446DD3B002B6507 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 0C15FF8A2446DD3B002B6507 /* Build configuration list for PBXProject "JMLog" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0C15FF862446DD3B002B6507;
+			productRefGroup = 0C15FF912446DD3B002B6507 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0C15FF8F2446DD3B002B6507 /* JMLog */,
+				0C15FF982446DD3B002B6507 /* JMLogTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0C15FF8E2446DD3B002B6507 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C15FF972446DD3B002B6507 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0C15FF8C2446DD3B002B6507 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C15FFB62446DD69002B6507 /* JMLogBridgeOC.c in Sources */,
+				0C15FFB92446DD69002B6507 /* JMLogWriteManager.m in Sources */,
+				0C15FFBD2446DD69002B6507 /* JMLogBridgeC.m in Sources */,
+				0C15FFBB2446DD69002B6507 /* JMLog.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C15FF952446DD3B002B6507 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C15FF9F2446DD3B002B6507 /* JMLogTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0C15FF9C2446DD3B002B6507 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0C15FF8F2446DD3B002B6507 /* JMLog */;
+			targetProxy = 0C15FF9B2446DD3B002B6507 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0C15FFA22446DD3B002B6507 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		0C15FFA32446DD3B002B6507 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		0C15FFA52446DD3B002B6507 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = EB9K2L27BQ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = JMLog/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.3;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jimi.JMLog;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0C15FFA62446DD3B002B6507 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = EB9K2L27BQ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = JMLog/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.3;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jimi.JMLog;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0C15FFA82446DD3B002B6507 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EB9K2L27BQ;
+				INFOPLIST_FILE = JMLogTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jimi.JMLogTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0C15FFA92446DD3B002B6507 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EB9K2L27BQ;
+				INFOPLIST_FILE = JMLogTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jimi.JMLogTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0C15FF8A2446DD3B002B6507 /* Build configuration list for PBXProject "JMLog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C15FFA22446DD3B002B6507 /* Debug */,
+				0C15FFA32446DD3B002B6507 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0C15FFA42446DD3B002B6507 /* Build configuration list for PBXNativeTarget "JMLog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C15FFA52446DD3B002B6507 /* Debug */,
+				0C15FFA62446DD3B002B6507 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0C15FFA72446DD3B002B6507 /* Build configuration list for PBXNativeTarget "JMLogTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C15FFA82446DD3B002B6507 /* Debug */,
+				0C15FFA92446DD3B002B6507 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0C15FF872446DD3B002B6507 /* Project object */;
+}
