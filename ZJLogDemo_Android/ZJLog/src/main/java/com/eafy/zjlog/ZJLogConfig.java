@@ -22,10 +22,6 @@ public class ZJLogConfig {
     public boolean isDebug = true;     //日志输出开关（默认开启）
     public boolean isSave = false;     //是否保存日志到内置SD卡
 
-    ZJLogConfig() {
-
-    }
-
     /**
      * 设置日志的tag标签
      *
@@ -133,7 +129,7 @@ public class ZJLogConfig {
         try {
             logConfigurator.setFileName(getLogFilePath());
             logConfigurator.setRootLevel(Level.ALL);
-            logConfigurator.setLevel("Jimi", Level.ALL);
+            logConfigurator.setLevel( "Eafy", Level.ALL);
             logConfigurator.setMaxFileSize(1024 * 1024 * mFileSize);   //文件的最大大小:10M
             logConfigurator.setMaxBackupSize(mFileCount);    //最多文件个数:5个
             logConfigurator.setUseLogCatAppender(true);

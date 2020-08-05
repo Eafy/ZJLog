@@ -1,5 +1,6 @@
 package com.eafy.zjlog;
 
+import android.os.Looper;
 import android.util.Log;
 
 import org.apache.log4j.Appender;
@@ -8,10 +9,6 @@ import org.apache.log4j.Logger;
 public class ZJLog {
     private static Logger mLogger = null;
     public static ZJLogConfig config = new ZJLogConfig();
-
-    public ZJLog() {
-
-    }
 
     private static ZJLogConfig getConfig() {
         if (config == null) {
@@ -35,6 +32,7 @@ public class ZJLog {
                 mLogger.addAppender(config.appender());
                 mLogger.setAdditivity(false);   //避免重复输出2次日志
             }
+            ZJLogJni.OpenLog(true);
         }
 
         if (mLogger != null && !tag.equals(mLogger.getName())) {
@@ -58,10 +56,19 @@ public class ZJLog {
      * @param msg    日志
      * @return 是否保存
      */
-    private static boolean saveToLoger(ZJLogConfig config, String tag, String msg) {
+    private static boolean saveToLoger(ZJLogConfig config, String tag, String msg, int prio) {
         if (config != null && config.isDebug && msg != null) {
             if (config.isSave) {
-                getLoger(config, tag).debug(msg);
+                switch (prio) {
+                    case Log.ERROR:
+                        getLoger(config, tag).error(msg); break;
+                    case Log.INFO:
+                        getLoger(config, tag).info(msg); break;
+                    case Log.WARN:
+                        getLoger(config, tag).warn(msg); break;
+                    default:
+                        getLoger(config, tag).debug(msg); break;
+                }
                 return true;
             }
         }
@@ -70,31 +77,31 @@ public class ZJLog {
     }
 
     public static void v(ZJLogConfig config, String tag, String msg) {
-        if (!saveToLoger(config, tag, msg)) {
+        if (!saveToLoger(config, tag, msg, Log.VERBOSE)) {
             Log.v(tag, msg);
         }
     }
 
     public static void d(ZJLogConfig config, String tag, String msg) {
-        if (!saveToLoger(config, tag, msg)) {
+        if (!saveToLoger(config, tag, msg, Log.DEBUG)) {
             Log.d(tag, msg);
         }
     }
 
     public static void i(ZJLogConfig config, String tag, String msg) {
-        if (!saveToLoger(config, tag, msg)) {
+        if (!saveToLoger(config, tag, msg, Log.INFO)) {
             Log.i(tag, msg);
         }
     }
 
     public static void w(ZJLogConfig config, String tag, String msg) {
-        if (!saveToLoger(config, tag, msg)) {
+        if (!saveToLoger(config, tag, msg, Log.WARN)) {
             Log.w(tag, msg);
         }
     }
 
     public static void e(ZJLogConfig config, String tag, String msg) {
-        if (!saveToLoger(config, tag, msg)) {
+        if (!saveToLoger(config, tag, msg, Log.ERROR)) {
             Log.e(tag, msg);
         }
     }

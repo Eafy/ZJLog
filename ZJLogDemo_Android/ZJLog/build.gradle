@@ -2,7 +2,7 @@ apply plugin: 'com.android.library'
 apply plugin: 'com.github.dcendents.android-maven'
 apply plugin: 'com.jfrog.bintray'
 
-def ZJLog_Version_Value = "1.0.7"
+def ZJLog_Version_Value = "1.0.9"
 
 android {
     compileSdkVersion 29
