@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/Eafy/ZJLog"
   s.license      = { :type => "MIT" }
   s.author       = { "eafy" => "lizhijian_21@163.com" }
-  s.source       = { :git => "https://github.com/Eafy/ZJLog.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/Eafy/ZJLog.git", :tag => "v#{s.version}" }
   s.platform     = :ios, "8.0"
 
   s.source_files = "ZJLog/**/*.{h,m,c,mm}"
