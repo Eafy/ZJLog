@@ -2,8 +2,8 @@
 //  Singleton.h
 //  ZJLog
 //
-//  Created by lzj<lizhijian_21@163.com> on 2018/5/11.
-//  Copyright © 2018年 LZJ. All rights reserved.
+//  Created by eafy on 2018/5/11.
+//  Copyright © 2018年 ZJ. All rights reserved.
 //
 //单例模式宏,头文件宏：singleton_h(name)，实现文件宏：singleton_m(name)。
 //比如单列类名为：shareAudioTool,头文件加入singleton_h(AudioTool)，实现文件：singleton_m(AudioTool);

@@ -2,8 +2,8 @@
 //  ZJLogTests.m
 //  ZJLogTests
 //
-//  Created by lzj<lizhijian_21@163.com> on 2020/4/15.
-//  Copyright © 2020 Jimi. All rights reserved.
+//  Created by eafy on 2020/4/15.
+//  Copyright © 2020 ZJ. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>

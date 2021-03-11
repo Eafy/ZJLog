@@ -2,7 +2,7 @@
 //  ZJLog.h
 //  ZJLog
 //
-//  Created by lzj<lizhijian_21@163.com> on 2019/1/2.
+//  Created by eafy on 2019/1/2.
 //  Copyright © 2019 ZJ. All rights reserved.
 //
 

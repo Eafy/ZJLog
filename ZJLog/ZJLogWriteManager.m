@@ -2,7 +2,7 @@
 //  ZJLogWriteManager.m
 //  ZJLog
 //
-//  Created by lzj<lizhijian_21@163.com> on 2019/1/8.
+//  Created by eafy on 2019/1/8.
 //  Copyright © 2019 ZJ. All rights reserved.
 //
 
