@@ -1,6 +1,6 @@
 //
 //  ZJPrintfLog.h
-//  IOTCamera
+//  ZJLog
 //
 //  Created by eafy on 2018/7/16.
 //  Copyright © 2018年 ZJ. All rights reserved.
@@ -11,8 +11,6 @@
 #ifdef __cplusplus
 extern "C" {
 #endif
-#include <stdio.h>
-#include <string>
 
 #ifndef CPrintfLevel
 #define CPrintfLevel

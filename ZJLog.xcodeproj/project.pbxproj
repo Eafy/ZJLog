@@ -20,6 +20,7 @@
 		0C15FFBB2446DD69002B6507 /* ZJLog.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0C15FFB12446DD69002B6507 /* ZJLog.mm */; };
 		0C15FFBC2446DD69002B6507 /* ZJLogBridgeOC.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C15FFB22446DD69002B6507 /* ZJLogBridgeOC.h */; };
 		0C15FFBD2446DD69002B6507 /* ZJLogBridgeC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C15FFB32446DD69002B6507 /* ZJLogBridgeC.m */; };
+		0CFCC48B25FA087400FAE6BA /* ZJLog.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 0CFCC48A25FA087400FAE6BA /* ZJLog.podspec */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		0C15FFB12446DD69002B6507 /* ZJLog.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ZJLog.mm; sourceTree = "<group>"; };
 		0C15FFB22446DD69002B6507 /* ZJLogBridgeOC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJLogBridgeOC.h; sourceTree = "<group>"; };
 		0C15FFB32446DD69002B6507 /* ZJLogBridgeC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJLogBridgeC.m; sourceTree = "<group>"; };
+		0CFCC48A25FA087400FAE6BA /* ZJLog.podspec */ = {isa = PBXFileReference; lastKnownFileType = file; path = ZJLog.podspec; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				0C15FFAD2446DD69002B6507 /* ZJPrintfLog.h */,
 				0C15FFB02446DD69002B6507 /* Singleton.h */,
 				0C15FF942446DD3B002B6507 /* Info.plist */,
+				0CFCC48A25FA087400FAE6BA /* ZJLog.podspec */,
 			);
 			path = ZJLog;
 			sourceTree = "<group>";
@@ -213,6 +216,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CFCC48B25FA087400FAE6BA /* ZJLog.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

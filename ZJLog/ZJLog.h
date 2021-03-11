@@ -11,7 +11,6 @@
 
 #ifndef ZLog
 #define ZLog(...) [ZJLog log:[NSString stringWithFormat:__VA_ARGS__]]
-#define CLog JLog
 #endif
 
 typedef enum : NSUInteger {
