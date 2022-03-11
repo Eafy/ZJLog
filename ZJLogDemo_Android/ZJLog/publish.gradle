@@ -45,12 +45,12 @@ publishing {
 
             pom {
                 name = publishProjectName
-                description = 'ZJ Media Player SDK for Android at Maven，Supported H.264、Hevc、AAC and other formats.'
+                description = 'Log redirection output tool for Android, support for c、c++、m、mm code files.'
                 url = publishSiteUrl
                 licenses {
                     license {
-                        name = 'The Apache License, Version 2.0'
-                        url = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+                        name = 'MIT'
+                        url = 'https://choosealicense.com/licenses/mit/'
                     }
                 }
                 developers {
