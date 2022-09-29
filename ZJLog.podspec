@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "ZJLog"
-  s.version      = "1.2.1"
+  s.version      = "1.2.2"
   s.summary      = "Log redirection output tool for iOS, support for c、c++、m、mm code files."
   s.description  = <<-DESC
 	Log redirection output tool for iOS, you can set the Log level, redirect output to the proxy interface, save logs to the sandbox, support for c、c++、m、mm code files, and more.
@@ -12,11 +12,11 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "11.0"
   s.pod_target_xcconfig = {
     'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64',
-    'VALID_ARCHS' => 'arm64 x86_64 arm64e'
+    'VALID_ARCHS' => 'arm64 arm64e'
   }
   s.user_target_xcconfig = {
     'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64',
-    'VALID_ARCHS' => 'arm64 x86_64 arm64e'
+    'VALID_ARCHS' => 'arm64 arm64e'
   }
 
   s.source_files = "ZJLog/**/*.{h,m,c,mm}"
