@@ -1,16 +1,16 @@
 apply plugin: 'com.android.library'
 
-def ZJLog_Version_Value = "1.1.2"
+def ZJLog_Version_Value = "1.1.3"
 
 android {
-    compileSdkVersion 30
+    compileSdkVersion 32
     buildToolsVersion "29.0.3"
 
 
     defaultConfig {
         minSdkVersion 19
-        targetSdkVersion 30
-        versionCode 112
+        targetSdkVersion 32
+        versionCode 113
         versionName ZJLog_Version_Value
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"

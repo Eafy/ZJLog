@@ -97,7 +97,8 @@ public class ZJLogConfig {
             }
             return mPathDic;
         }
-        return Environment.getExternalStorageDirectory().getAbsolutePath() + File.separator + "ZJLog" + File.separator;
+
+        return Environment.getDataDirectory().getAbsolutePath() + File.separator + "ZJLog" + File.separator;
     }
 
     public String getLogFilePath() {
