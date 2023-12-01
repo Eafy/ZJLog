@@ -1,5 +1,6 @@
 package com.eafy.zjlog;
 
+import android.content.Context;
 import android.os.Environment;
 import android.util.Log;
 
@@ -15,6 +16,7 @@ import de.mindpipe.android.logging.log4j.LogConfigurator;
 
 public class ZJLogConfig {
     private String mTAG = "ZJLog";
+    private Context mContext = null;
     private String mFileName = null;     //日志文件名称
     private String mPathDic = null;      //日志保存的上级目录
     private int mFileCount = 5;          //日志文件最大的数量
@@ -22,13 +24,19 @@ public class ZJLogConfig {
     public boolean isDebug = true;     //日志输出开关（默认开启）
     public boolean isSave = false;     //是否保存日志到内置SD卡
 
+    public ZJLogConfig setContext(Context context) {
+        mContext = context;
+        return this;
+    }
+
     /**
      * 设置日志的tag标签
      *
      * @param tag 日志标签，默认"ZJLog"
      * */
-    public void setTAG(String tag) {
+    public ZJLogConfig setTAG(String tag) {
         mTAG = tag;
+        return this;
     }
 
     /**
@@ -43,8 +51,9 @@ public class ZJLogConfig {
      *
      *  @param isDebug 是否启动
      * */
-    public void setIsDebug(boolean isDebug) {
+    public ZJLogConfig setIsDebug(boolean isDebug) {
         this.isDebug = isDebug;
+        return this;
     }
 
     /**
@@ -52,8 +61,9 @@ public class ZJLogConfig {
      *
      * @param need 是否保存
      * */
-    public void setSaveEnable(boolean need) {
+    public ZJLogConfig setSaveEnable(boolean need) {
         this.isSave = need;
+        return this;
     }
 
     /**
@@ -62,8 +72,9 @@ public class ZJLogConfig {
      *
      * @param name 文件名称
      * */
-    public void setFileName(String name) {
+    public ZJLogConfig setFileName(String name) {
         mFileName = name;
+        return this;
     }
 
     /**
@@ -72,8 +83,9 @@ public class ZJLogConfig {
      *
      * @param pathDic 日志文件上级文件夹路径
      * */
-    public void setSavePathDic(String pathDic) {
+    public ZJLogConfig setSavePathDic(String pathDic) {
         mPathDic = pathDic;
+        return this;
     }
 
     /**
@@ -81,14 +93,20 @@ public class ZJLogConfig {
      *
      * @param count 文件个数
      * */
-    public void setSaveFileCount(int count) { if (count > 0) mFileCount = count; }
+    public ZJLogConfig setSaveFileCount(int count) {
+        if (count > 0) mFileCount = count;
+        return this;
+    }
 
     /**
      * 设置日志存储的单个文件大小，以兆为单位
      *
      * @param size 单个文件大小，以兆为单位
      * */
-    public void setSaveFileSize(int size) { if (size > 0) mFileSize = size; }
+    public ZJLogConfig setSaveFileSize(int size) {
+        if (size > 0) mFileSize = size;
+        return this;
+    }
 
     public String getLogFileDir() {
         if (mPathDic != null) {
@@ -98,7 +116,12 @@ public class ZJLogConfig {
             return mPathDic;
         }
 
-        return Environment.getDataDirectory().getAbsolutePath() + File.separator + "ZJLog" + File.separator;
+        String pathDic = Environment.getDownloadCacheDirectory().getAbsolutePath();
+        if (mContext != null) {
+            pathDic = mContext.getApplicationContext().getFilesDir().getAbsolutePath();
+        }
+        mPathDic = pathDic + File.separator + "ZJLog" + File.separator;
+        return mPathDic;
     }
 
     public String getLogFilePath() {
