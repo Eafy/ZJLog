@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.license      = { :type => "MIT" }
   s.author       = { "eafy" => "lizhijian_21@163.com" }
   s.source       = { :git => "https://github.com/Eafy/ZJLog.git", :tag => "v#{s.version}" }
-  s.platform     = :ios, "11.0"
+  s.platform     = :ios, "15.6"
   s.pod_target_xcconfig = {
     'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64',
     'EXCLUDED_ARCHS[sdk=iphoneos*]' => 'arm64'
