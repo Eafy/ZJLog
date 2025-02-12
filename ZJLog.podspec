@@ -11,12 +11,10 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/Eafy/ZJLog.git", :tag => "v#{s.version}" }
   s.platform     = :ios, "15.6"
   s.pod_target_xcconfig = {
-    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64',
-    'EXCLUDED_ARCHS[sdk=iphoneos*]' => 'arm64'
+    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
   }
   s.user_target_xcconfig = {
-    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64',
-    'EXCLUDED_ARCHS[sdk=iphoneos*]' => 'arm64'
+    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
   }
 
   s.source_files = "ZJLog/**/*.{h,m,c,mm}"
